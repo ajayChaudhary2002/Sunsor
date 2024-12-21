@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOP LEFT PART */
+
+.headerPart{
+    background-color: #E8B536;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 6rem;
+}
+
+.starDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.starImg{
+    font-size:25px;
+}
+.starDivText{
+    font-weight: 500;
+    font-size:15px;
+    line-height: 22.5px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.starDivBoldPart{
+    font-weight: 700;
+    text-decoration: underline solid;
+}
+
+/* END TOP LEFT PART */
+
+
+/* TOP RIGHT PART START */
+
+.addressDiv{
+    border:1px solid #D9D9D9D6;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 4px;
+}
+.headerLocarionDiv{
+    height: 36.12px;
+    width: 36.12px;
+    border-radius: 50%;
+    background-color: #FFFFFF6B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.LocationIcon{
+    height: 19px;
+    width: 19px;
+    
+}
+.locationTextDiv{
+    width: 142px;
+    height: 30px;
+}
+.LocationText{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* TOP RIGHT PART ENDS HERE */
+
+

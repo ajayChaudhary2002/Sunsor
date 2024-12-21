@@ -1,0 +1,491 @@
+.section1Container {
+    position: relative;
+    background-image: url('../assetss/bgImg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3rem;
+}
+
+/* Add an overlay for the gradient */
+.section1Container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assetss/Rectangle 40.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Allow interaction with elements below */
+    z-index: 0;
+}
+.section1LargeText {
+    font-family: 'Rockwell', serif; 
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 89.25px;
+    color: white;
+    margin-left: 7rem;
+    z-index: 5;
+}
+
+.section1Para {
+    font-family: 'Inter', sans-serif; 
+    color: white;
+    margin-left: 7rem;
+    width: 708px;
+    font-size: 24px;
+    line-height: 36px;
+    z-index: 5;
+}
+
+.exploreButton {
+    margin-left: 7rem;
+    width: 191px;
+    height: 54px;
+    background-color: #CE2225;
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+    color: white;
+    line-height: 32px;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.imgSection {
+    margin-left: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 317px;
+    z-index: 5;
+}
+
+.randomImages {
+    position: relative;
+    z-index: 5;
+}
+
+.childDiv1, .childDiv2, .childDiv3 {
+    width: 51px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    z-index: 5;
+}
+
+.childDiv1 {
+    left: 0;
+}
+
+.childDiv2 {
+    left: 2rem;
+}
+
+.childDiv3 {
+    left: 4rem;
+}
+
+.someText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.someTextUpper {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    z-index: 5;
+}
+
+.littleText {
+    width: 183px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 500;
+    font-size: 15px;
+    z-index: 5;
+}
+
+
+
+/* SECTION 2 STARTS FROM HERE  */
+
+.heroSectionRedPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CE2225;
+    position: relative;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+}
+
+.heroSectionRedPartHeading{
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: 400;
+    font-size:48px;
+    line-height: 57.6px;
+    color:white;
+}
+
+.heroSectionRedPartPara{
+    width:833px;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color:white;
+    text-align: center;
+
+}
+
+.heroSectionRedPartObjectDiv{
+    width:1055.25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:0 5rem;
+    gap:4rem;
+    margin-top: 2rem;
+}
+.heroSectionItem{
+    position: relative;
+}
+.starImage{
+    position: relative;
+    z-index: 4;
+}
+.bgStarImage{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.heroProductImageDiv{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+}
+.heroSectionProductText{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 21.3px;
+    line-height: 23.9px;
+    color:white;
+    margin-top: 2rem;
+}
+
+.heroSectionRedPartFooterDiv{
+    width: 80%;
+    position: absolute;
+    bottom: -8rem;
+}
+
+.heroSectionRedPartFooter {
+    position: relative;
+    width:100%;
+    border-radius: 25px;
+    background-image: url('../assetss/image (2).png'), url('../assetss/gradiantImg.png');
+    background-size: cover, cover; 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left:4rem;
+}
+
+/* Add an overlay for the gradient background */
+.heroSectionRedPartFooter::after {
+    content: '';
+    border-radius:25px ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assetss/Rectangle 40.png'); /* Overlay image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Allow interaction with elements below */
+    z-index: 0;
+}
+
+.heroSectionRedPartFooter_paragraphs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.heroSectionRedPartFooter_heading{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+    z-index: 1;
+}
+.heroSectionRedPartFooter_para1,.heroSectionRedPartFooter_para1,.heroSectionRedPartFooter_para3{
+    display: flex;
+    color:white;
+    z-index: 1;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 55px;
+    gap:0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+.heroSectionRedPartFooter_para1_icons{
+    background-image: url('../assetss/checkContainer.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+
+
+}
+
+.heroSectionRedPartFooter_oilImage{
+    z-index: 1;
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0rem;
+    height: 250px;
+    width: 250px;
+}
+
+
+/* SECTION 3 STARTS FROM HERE */
+
+.heroSectionBestSeller{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 8rem;
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+    background-color: #FFE8B4;
+
+}
+.heroSectionBestSeller_headingDiv{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.heroSectionBestSeller_heading{
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #200E32;
+}
+.heroSectionBestSeller_headingDivNavigate
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.heroSectionBestSeller_headingDiv_NavigateLeft , .heroSectionBestSeller_headingDiv_NavigateRight{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F2F3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroSectionBestSeller_headingDiv_NavigateRight{
+    transform: rotate(180deg);
+}
+
+.heroSectionBestSeller_contentDiv{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 1rem; /* Add space between grid items */
+    margin-top: 4rem;
+    width: 100%; /* Use 100% width for the container to span the full available width */
+    height: auto; /* Adjust height automatically based on content */
+}
+
+.heroSectionBestSeller_contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.heroSectionBestSeller_mainContent{
+    padding:1rem 0;
+    height: max-content;
+    min-height: 325.12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border:2px solid #CE2225;
+    border-radius: 12px;
+}
+.heroSectionBestSeller_mainContent_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+}
+.heroSectionBestSeller_mainContent_header_stock{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 500;
+    font-size: 12px;
+    color: #8B8B8B;
+    line-height: 18px;
+    border-radius: 90px;
+    padding:5px 15px;
+    box-shadow: 0.4px 0.4px 5px #7a7a7a36;
+}
+.heroSectionBestSeller_mainContent_header_Like{
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0.4px 0.4px 5px #7a7a7a36;
+}
+.heroSectionBestSeller_mainContent_footer{
+    display: flex;
+        justify-content: start;
+        align-items: end;
+        width: 100%;
+        padding-left: 1.2rem;
+        position: relative;
+}
+.heroSectionBestSeller_mainContent_footer_para{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size:18px;
+    line-height: 27px;
+}
+.heroSectionBestSeller_mainContent_AddToCart{
+    height: 45px;
+    width: 134px;
+    padding: 10px;
+    background-color: #CE2225;
+    border-radius: 12px;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 500;
+    font-size: 18px;
+    color:#FAFAFA;
+    position: absolute;
+    bottom:-6px;
+    right:5px;
+}
+.heroSectionBestSeller_restContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.heroSectionBestSeller_restContent_productName{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    color:#200E32;
+    line-height: 22px;
+}
+.heroSectionBestSeller_restContent_inStock{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 12px;
+    color:#74B169;
+    line-height: 27px;
+}
+
+.heroSectionBestSeller_restContent_AmountDetails{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroSectionBestSeller_restContent_currentAmount{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 22px;
+    color:#CE2225;
+    line-height: 27px;
+}
+.heroSectionBestSeller_restContent_AmountDiv{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:0.4rem;
+}
+.heroSectionBestSeller_restContent_oldAmount{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+    color:#8B8B8B;
+    line-height: 27px;
+    text-decoration:line-through;
+}
+.heroSectionBestSeller_restContent_ratingsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroSectionBestSeller_restContent_ratings{
+    font-family: 'Poppins','sans-serif';
+    font-weight: 600;
+    font-size: 14px;
+    color:#8B8B8B;
+    line-height: 27px;
+}
