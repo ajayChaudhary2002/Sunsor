@@ -1,0 +1,193 @@
+/* Default Styles */
+.ReusableHeroSection2_container {
+  background-color: #ce2225;
+  padding: 6rem;
+}
+
+.ReusableHeroSection2_Videos_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.ReusableHeroSection2_Videos_text {
+  font-family: "Poetsen one", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.ReusableHeroSection2_Videos_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.ReusableHeroSection2_Videos_boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+
+.ReusableHeroSection2_Videos_playbtn {
+  width: 80.31px;
+  height: 80.31px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+.ReusableHeroSection2_Videos_playbtn_icon {
+  margin-left: 10px;
+}
+
+.ReusableHeroSection2_Videos_descText {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 500;
+  font-size: 14.53px;
+  line-height: 21.79px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.ReusableHeroSection2_Videos_name {
+  font-family: "Poetsen one", sans-serif;
+  width: 340px;
+  font-size: 24.05px;
+  color: #ffffff;
+  line-height: 31.56px;
+}
+
+.ReusableHeroSection2_Videos_boxes_img {
+  position: relative;
+  max-width: 393px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Styles */
+
+/* For 1024px and below (Tablet Landscape) */
+@media screen and (max-width: 1024px) {
+  .ReusableHeroSection2_container {
+    padding: 4rem;
+  }
+
+  .ReusableHeroSection2_Videos_text {
+    font-size: 40px;
+  }
+
+  .ReusableHeroSection2_Videos_container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .ReusableHeroSection2_Videos_boxes {
+    width: 100%;
+  }
+
+  .ReusableHeroSection2_Videos_name {
+    font-size: 20px;
+    width: auto;
+  }
+
+  .ReusableHeroSection2_Videos_descText {
+    font-size: 13px;
+  }
+
+  .ReusableHeroSection2_Videos_playbtn {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* For 768px and below (Tablet Portrait) */
+@media screen and (max-width: 768px) {
+  .ReusableHeroSection2_container {
+    padding: 3rem;
+  }
+
+  .ReusableHeroSection2_Videos_text {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ReusableHeroSection2_Videos_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  .ReusableHeroSection2_Videos_name {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ReusableHeroSection2_Videos_descText {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ReusableHeroSection2_Videos_playbtn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ReusableHeroSection2_Videos_boxes_img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* For 425px and below (Mobile) */
+@media screen and (max-width: 425px) {
+  .ReusableHeroSection2_container {
+    padding: 2rem;
+  }
+
+  .ReusableHeroSection2_Videos_text {
+    font-size: 28px;
+  }
+
+  .ReusableHeroSection2_Videos_container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .ReusableHeroSection2_Videos_name {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ReusableHeroSection2_Videos_descText {
+    font-size: 11px;
+  }
+
+  .ReusableHeroSection2_Videos_playbtn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ReusableHeroSection2_Videos_boxes_img {
+    max-width: 100%;
+  }
+}

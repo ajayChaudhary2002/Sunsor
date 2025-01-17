@@ -1,11 +1,11 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from "react";
+import Header from "../components/Header";
 const Resources = () => {
   return (
     <div>
-      <Header/>
+      <Header />
     </div>
-  )
-}
+  );
+};
 
-export default Resources
+export default Resources;

@@ -1,0 +1,375 @@
+.headerForProductContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 4rem;
+  /* height: 106px; */
+  border-bottom: 1px solid #d0d0d2;
+  margin-bottom: 2rem;
+}
+.headerForProductContainer_right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.headerForProductContainer_searchContainer {
+  max-width: 50%;
+  width: 50%;
+  max-height: 44px;
+  display: flex;
+  justify-content: center;
+}
+.headerForProductContainer_input {
+  width: 80%;
+  background-color: #fafafa;
+  border: 1px solid #d0d0d2;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8b8b8b;
+  padding: 0.4rem 0.6rem;
+}
+.headerForProductContainer_searchButton {
+  max-width: 63.7px;
+  max-height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ce2225;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.headerForProductContainer_logo {
+  width: 44.12px;
+  height: 44.12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f8eae4;
+  position: relative;
+  cursor: pointer;
+}
+.heartShape{
+  width: 55%;
+}
+.cartLogo{
+  width: 56%;
+}
+.userIconShape{
+  width: 44.12px;
+}
+.userIcon{
+  width: 100%;
+}
+.headerForProductContainer_addressDiv {
+  border-radius: 55px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 4px;
+  background-color: #f8eae4;
+}
+.searchIconDiv{
+  width: 44.12px;
+}
+.headerForProductContainer_headerLocarionDiv {
+  height: 36.12px;
+  width: 36.12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LocationIcon {
+  height: 19px;
+  width: 19px;
+}
+.headerForProductContainer_locationTextDiv {
+  width: 142px;
+  height: 30px;
+}
+.LocationText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Prompt", sans-serif;
+}
+
+.headerForProductContainer_DropDown {
+  width: 103px;
+  height: 100px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.5rem;
+  position: absolute;
+  top: 4.4rem;
+  z-index: 1;
+}
+.headerForProductContainer_DropDown_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+.headerForProductContainer_DropDown_breaker {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #8b8b8b;
+}
+
+.headerForProductContainer_DropDown_createAccounts {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  color: #ce2225;
+  cursor: pointer;
+}
+
+
+/* Media Query for Screens 1024px and Below */
+@media (max-width: 1024px) {
+  .headerForProductContainer {
+    padding: 1rem 2rem; /* Reduce padding for smaller screens */
+    gap: 3rem; /* Reduce gap between elements */
+  }
+
+  .headerForProductContainer_searchContainer {
+    max-width: 60%; /* Adjust search container width */
+    width: 45%; /* Ensure container takes up 60% of the parent */
+    padding-right: 1rem;
+  }
+
+  .headerForProductContainer_input {
+    width: 90%; /* Adjust input field width */
+    font-size: 13px; /* Smaller font size for input */
+  }
+
+  .headerForProductContainer_searchButton {
+    width: 12%; /* Adjust search button width */
+  }
+
+  .headerForProductContainer_logo {
+    width: 44.12px; /* Keep the same logo size */
+    height: 44.12px; /* Keep the same logo size */
+  }
+
+  .headerForProductContainer_right {
+    gap: 0.5rem; /* Reduce gap */
+    justify-content: flex-end; /* Align right side content to the right */
+  }
+
+  .headerForProductContainer_addressDiv {
+    padding: 4px; /* Keep padding as is */
+    gap: 1rem; /* Maintain gap */
+  }
+
+  .headerForProductContainer_locationTextDiv {
+    width: auto; /* Adjust location text div width */
+    max-width: 120px; /* Restrict maximum width */
+  }
+
+  .LocationText {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .headerForProductContainer_DropDown {
+    width: 90px; /* Adjust width of dropdown */
+    height: 90px; /* Adjust height */
+  }
+
+  .headerForProductContainer_DropDown_text {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .headerForProductContainer_DropDown_breaker {
+    font-size: 9px; /* Smaller breaker font size */
+  }
+
+  .headerForProductContainer_DropDown_createAccounts {
+    font-size: 10px; /* Smaller font size */
+  }
+
+  .LocationIcon {
+    width: 16px;
+    height: 16px; /* Smaller location icon */
+  }
+
+  /* Keep the size of icons and logos unchanged */
+  .userIconShape, .searchIconDiv {
+    width: 44.12px; /* Keep logo sizes the same */
+  }
+}
+@media (max-width: 768px) {
+  .headerForProductContainer {
+    padding: 1rem 2rem; /* Reduce padding for smaller screens */
+    gap: 3rem; /* Reduce gap between elements */
+  }
+
+  .headerForProductContainer_searchContainer {
+    display: none;
+  }
+
+  .headerForProductContainer_input {
+    width: 90%; /* Adjust input field width */
+    font-size: 13px; /* Smaller font size for input */
+  }
+
+  .headerForProductContainer_searchButton {
+    width: 12%; /* Adjust search button width */
+  }
+
+  .headerForProductContainer_logo {
+    width: 36px;
+    height: 36px
+  }
+
+  .headerForProductContainer_right {
+    gap: 0.5rem; /* Reduce gap */
+    justify-content: flex-end; /* Align right side content to the right */
+  }
+
+  .headerForProductContainer_addressDiv {
+    padding: 4px; /* Keep padding as is */
+    gap: 0.5rem; /* Maintain gap */
+  }
+
+  .headerForProductContainer_locationTextDiv {
+    width: auto; /* Adjust location text div width */
+    max-width: 120px; /* Restrict maximum width */
+  }
+
+  .LocationText {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .headerForProductContainer_DropDown {
+    width: 90px; /* Adjust width of dropdown */
+    height: 90px; /* Adjust height */
+  }
+
+  .headerForProductContainer_DropDown_text {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .headerForProductContainer_DropDown_breaker {
+    font-size: 9px; /* Smaller breaker font size */
+  }
+
+  .headerForProductContainer_DropDown_createAccounts {
+    font-size: 10px; /* Smaller font size */
+  }
+
+  .LocationIcon {
+    width: 16px;
+    height: 16px; /* Smaller location icon */
+  }
+
+  /* Keep the size of icons and logos unchanged */
+  .userIconShape, .searchIconDiv {
+    width: 36px; /* Keep logo sizes the same */
+  }
+  .headerForProductContainer_headerLocarionDiv{
+    height: 32px;
+    width: 32px;
+  }
+}
+@media (max-width: 426px) {
+  .headerForProductContainer {
+    padding: 1rem 2rem; /* Reduce padding for smaller screens */
+    gap: 1rem; /* Reduce gap between elements */
+  }
+
+  .headerForProductContainer_searchContainer {
+    display: none;
+  }
+
+  .headerForProductContainer_input {
+    width: 90%; /* Adjust input field width */
+    font-size: 13px; /* Smaller font size for input */
+  }
+
+  .headerForProductContainer_searchButton {
+    width: 12%; /* Adjust search button width */
+  }
+
+  .headerForProductContainer_logo {
+    width: 30px;
+    height: 30px
+  }
+
+  .headerForProductContainer_right {
+    gap: 0.5rem; /* Reduce gap */
+    justify-content: flex-end; /* Align right side content to the right */
+  }
+
+  .headerForProductContainer_addressDiv {
+    padding: 4px; /* Keep padding as is */
+    gap: 0; /* Maintain gap */
+  }
+
+  .headerForProductContainer_locationTextDiv {
+    width: auto; /* Adjust location text div width */
+    max-width: 120px; /* Restrict maximum width */
+    display: none;
+  }
+
+  .LocationText {
+    display: none;
+  }
+
+  .headerForProductContainer_DropDown {
+    width: 90px; /* Adjust width of dropdown */
+    height: 90px; /* Adjust height */
+  }
+
+  .headerForProductContainer_DropDown_text {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .headerForProductContainer_DropDown_breaker {
+    font-size: 9px; /* Smaller breaker font size */
+  }
+
+  .headerForProductContainer_DropDown_createAccounts {
+    font-size: 10px; /* Smaller font size */
+  }
+
+  .LocationIcon {
+    width: 16px;
+    height: 16px; /* Smaller location icon */
+  }
+
+  /* Keep the size of icons and logos unchanged */
+  .userIconShape, .searchIconDiv {
+    width: 30px; /* Keep logo sizes the same */
+  }
+  .headerForProductContainer_headerLocarionDiv{
+    height: 26px;
+    width: 26px;
+  }
+  .userIconImg{
+    width: 20px;
+  }
+}

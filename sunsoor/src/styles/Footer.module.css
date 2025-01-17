@@ -1,0 +1,451 @@
+/* .Footer_container {
+  height: 421.5px;
+} */
+.mainFooter {
+  background-color: #ce2225;
+  height: 374px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.mainFooter_div1 {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+}
+
+.mainFooter_div1_txt1 {
+  font-family: "Poetsen one", sans-serif;
+  font-weight: 400;
+  font-size: 44.11px;
+  line-height: 52.93px;
+  color: white;
+}
+.mainFooter_div1_txt2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 13.23px;
+  line-height: 19.85px;
+  color: white;
+}
+.mainFooter_div1_EmailDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+.mainFooter_div1_emailBox {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.mainFooter_div1_emailBox::placeholder {
+  color: #ce2225;
+}
+.mainFooter_div1_emailBox {
+  width: 274.17px;
+  height: 34.87px;
+  border-radius: 66.17px;
+  background-color: #ffffff;
+  color: #ce2225;
+  font-family: "Poppins", "sans-serif";
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+.mainFooter_div1_submitBtn {
+  width: 96.41px;
+  height: 32.87px;
+  border-radius: 66.17px;
+  background-color: #050617;
+  color: white;
+  font-family: "Poppins", "sans-serif";
+  font-size: 11.76px;
+  font-weight: 500;
+  line-height: 17.64px;
+}
+.mainFooter_div2,
+.mainFooter_div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60%;
+  margin-top: 4rem;
+  position: relative;
+  gap: 3rem;
+}
+.mainFooter_div2_topPart_header {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.mainFooter_div2_topPart_txt,
+.mainFooter_div2_bottomPart_para,
+.mainFooter_div3_bottomPart_para {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.mainFooter_div3_bottomPart,
+.mainFooter_div3_bottomPart {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mainFooter_div2_bottomPart_para {
+  margin-left: 16px;
+}
+.mainFooter_div3_bottomPart_para {
+  align-self: flex-start;
+}
+
+.bottomOfFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8b536;
+  padding: 0 6rem;
+  height: 47.5px;
+}
+
+.bottomOfFooter_para1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.mainFooter_div1_img {
+  position: relative;
+  right: 40px;
+}
+.mainFooter_div3_breakLine {
+  position: relative;
+  width: 1px;
+  height: 128px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 0;
+}
+.mainFooter_div_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+
+/* For screens 1024px and below */
+@media screen and (max-width: 1024px) {
+  .mainFooter {
+    padding: 0 3rem;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .mainFooter_div1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mainFooter_div1_txt1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .mainFooter_div1_txt2 {
+    font-size: 14px;
+  }
+
+  .mainFooter_div1_EmailDiv {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+
+  .mainFooter_div1_emailBox {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .mainFooter_div_right{
+    padding-bottom: 3rem;
+  }
+
+  .mainFooter_div1_submitBtn {
+    width: 30%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .mainFooter_div2,
+  .mainFooter_div3 {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .mainFooter_div2_topPart_header,
+  .mainFooter_div2_topPart_txt,
+  .mainFooter_div2_bottomPart_para,
+  .mainFooter_div3_bottomPart_para {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+  }
+  .mainFooter_div2_bottomPart_para{
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin: 0;
+  }
+  .mainFooter_div3_bottomPart_para{
+    box-sizing: border-box;
+    padding-left: 7.1rem;
+  }
+  .bottomOfFooter {
+    padding: 0 2rem;
+    height: 40px;
+  }
+
+  .bottomOfFooter_para1 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .mainFooter_div3_breakLine {
+    display: none;
+  }
+
+  .mainFooter_div_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainFooter_div1_img {
+    position: relative;
+    right: 0;
+  }
+}
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .mainFooter {
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .mainFooter_div1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mainFooter_div1_txt1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .mainFooter_div1_txt2 {
+    font-size: 12px;
+  }
+
+  .mainFooter_div1_EmailDiv {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .mainFooter_div1_emailBox {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .mainFooter_div1_submitBtn {
+    width: 40%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .mainFooter_div2,
+  .mainFooter_div3 {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    gap:2rem
+  }
+
+  .mainFooter_div2_topPart_header,
+  .mainFooter_div2_topPart_txt,
+  .mainFooter_div2_bottomPart_para,
+  .mainFooter_div3_bottomPart_para {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: start;
+  }
+
+  .mainFooter_div2_bottomPart_para {
+    box-sizing: border-box;
+    padding-left: 8px;
+    margin: 0;
+  }
+
+  .mainFooter_div3_bottomPart_para {
+    box-sizing: border-box;
+    padding-left: 4.7rem;
+  }
+
+  .bottomOfFooter {
+    padding: 0 1.5rem;
+    height: 35px;
+  }
+
+  .bottomOfFooter_para1 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .mainFooter_div3_breakLine {
+    display: none;
+  }
+
+  .mainFooter_div_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainFooter_div1_img {
+    position: relative;
+    right: 0;
+  }
+}
+
+/* For screens 480px and below */
+@media screen and (max-width: 480px) {
+  .mainFooter {
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .mainFooter_div1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mainFooter_div1_txt1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .mainFooter_div1_txt2 {
+    font-size: 10px;
+  }
+
+  .mainFooter_div1_EmailDiv {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+
+  .mainFooter_div1_emailBox {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .mainFooter_div1_submitBtn {
+    width: 50%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .mainFooter_div2,
+  .mainFooter_div3 {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .mainFooter_div2_topPart_header,
+  .mainFooter_div2_topPart_txt,
+  .mainFooter_div2_bottomPart_para,
+  .mainFooter_div3_bottomPart_para {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: start;
+  }
+
+  .mainFooter_div2_bottomPart_para {
+    box-sizing: border-box;
+    padding-left: 5px;
+    margin: 0;
+  }
+
+  .mainFooter_div3_bottomPart_para {
+    box-sizing: border-box;
+    padding-left: 10px;
+    
+  }
+
+  .bottomOfFooter {
+    padding: 0 1rem;
+    height: 30px;
+  }
+
+  .bottomOfFooter_para1 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .mainFooter_div3_breakLine {
+    display: none;
+  }
+
+  .mainFooter_div_right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainFooter_div1_img {
+    position: relative;
+    right: 0;
+  }
+}

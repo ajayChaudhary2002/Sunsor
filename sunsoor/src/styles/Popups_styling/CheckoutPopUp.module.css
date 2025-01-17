@@ -1,0 +1,70 @@
+.CheckoutPopUp_Container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* .CheckoutPopUp{
+    max-width: 726px;
+    width: 100%;
+    max-height: 652px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+} */
+.CheckoutPopUp {
+  max-width: 300px;
+  width: 100%;
+  max-height: 342px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+.CheckoutPopUp_Container_para {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ce2225;
+}
+.CheckoutPopUp_Container_txt {
+  max-width: 424px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5c5f6a;
+  text-align: center;
+}
+.CheckoutPopUp_Container_btn {
+  max-width: 165px;
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #ce2225;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24.5px;
+  color: #ffffff;
+}
+.CheckoutPopUp_Container_navLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

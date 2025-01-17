@@ -1,0 +1,37 @@
+.RelatedPagesContainer {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RelatedPagesContainer_HeadingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.RelatedPagesContainer_Heading {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  color: #200e32;
+}
+.RelatedPagesContainer_HeadingDiv_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.RelatedPagesContainer_HeadingDiv_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f2f3f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

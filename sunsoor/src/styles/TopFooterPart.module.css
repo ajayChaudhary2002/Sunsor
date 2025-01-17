@@ -1,0 +1,40 @@
+.TopFooterPart_container {
+  height: 328px;
+  background-color: #ffe8b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TopFooterPart_txt1 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ce2225;
+}
+.TopFooterPart_txt2 {
+  font-family: "Poetsen One", "sans-serif";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ce2225;
+}
+.TopFooterPart_socials {
+  max-width: 347px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+.TopFooterPart_socialMedia {
+  height: 59.2px;
+  width: 59.2px;
+  border: 1px solid #ce2225;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

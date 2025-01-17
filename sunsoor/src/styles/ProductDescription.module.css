@@ -1,0 +1,777 @@
+.myProductDescription_firstDiv {
+  width: 100%;
+  padding: 0rem 5rem;
+}
+.myProductDescription_firstDiv_text {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.myProductDescription_firstDiv_t {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #a7a7a7;
+}
+
+.myProductDescription_mainDiv {
+  height: 632.8px;
+  width: 100%;
+  padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.myProductDescription_mainDiv_left {
+  width: 40%;
+  height: 100%;
+  max-height: 491px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 1rem;
+}
+.myProductDescription_mainDiv_left_imgSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myProductDescription_mainDiv_right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 3rem 2rem;
+}
+.myProductDescription_mainDiv_right_div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 27px;
+}
+
+.myProductDescription_mainDiv_right_div1_left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.myProductDescription_mainDiv_right_div1_txt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #383838;
+}
+
+.myProductDescription_mainDiv_right_div1_images {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 6px;
+}
+.myProductDescription_mainDiv_right_div1_txt2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #a7a7a7;
+}
+.myProductDescription_mainDiv_right_div1_breaker {
+  width: 2px;
+  height: 20px;
+  align-self: center;
+  background-color: #a7a7a7;
+}
+
+.myProductDescription_mainDiv_right_div1_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.myProductDescription_mainDiv_right_div1_txt3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #383838;
+}
+
+.myProductDescription_mainDiv_right_div2 {
+  height: 485px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0.5rem 0;
+}
+
+.myProductDescription_mainDiv_right_div2_heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #383838;
+}
+
+.myProductDescription_mainDiv_right_div2_priceDiv {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.myProductDescription_mainDiv_right_div2_price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #383838;
+}
+.myProductDescription_mainDiv_right_div2_Off {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #a7a7a7;
+  text-decoration: line-through;
+}
+.myProductDescription_mainDiv_right_div2_save {
+  width: 107px;
+  height: 47px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ce2225;
+  color: #ce2225;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.myProductDescription_mainDiv_right_div2_delivery {
+  height: 32px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.myProductDescription_mainDiv_right_div2_delivery_div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.6rem;
+}
+.myProductDescription_mainDiv_right_div2_delivery_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #383838;
+}
+.myProductDescription_mainDiv_right_breaker {
+  height: 1px;
+  background-color: #a7a7a7;
+  width: 100%;
+}
+
+.myProductDescription_mainDiv_right_div2_randomText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a7a7a7;
+}
+.myProductDescription_mainDiv_right_container_ {
+  height: 66px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  background-color: #fff2f2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+.myProductDescription_mainDiv_right_breaker_text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15.73px;
+  color: #ce2225;
+}
+.myProductDescription_mainDiv_right_breaker_numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 156px;
+}
+.myProductDescription_mainDiv_right_breaker_number {
+  height: 34px;
+  width: 34px;
+  border-radius: 6px;
+  border: 1px solid #ffc9c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15.73px;
+  color: #ce2225;
+}
+.myProductDescription_mainDiv_right_breaker_text2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16.5px;
+  color: #6b7280;
+}
+.myProductDescription_mainDiv_right_availableSize {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.myProductDescription_mainDiv_right_sizes {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.myProductDescription_mainDiv_right_size1 {
+  width: 93px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.16px;
+  border: 0.77px solid #ce2225;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 13.8px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+.myProductDescription_mainDiv_right_size2 {
+  width: 93px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.16px;
+  border: 0.77px solid #000000;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 13.8px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+.myProductDescription_mainDiv_right_div3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.myProductDescription_mainDiv_right_div3_left {
+  width: 100%;
+  max-width: 291px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myProductDescription_mainDiv_right_div3_left_para {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #a7a7a7;
+}
+.myProductDescription_mainDiv_right_div3_left_decrement,
+.myProductDescription_mainDiv_right_div3_left_increment {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #383838;
+  cursor: pointer;
+}
+.myProductDescription_mainDiv_right_div3_left_txt {
+  font-family: "Poppins", sans-serif;
+  font-family: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ce2225;
+  max-width: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myProductDescription_mainDiv_right_div3_right {
+  height: 60px;
+  width: 180px;
+  border-radius: 8px;
+  background-color: #ce2225;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainProductDescriptionContainer {
+  width: 100vw;
+}
+
+.myProductDescription_div4 {
+  width: 88%;
+  height: 52px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 3px solid #383838;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 4rem;
+}
+.myProductDescription_div4_description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 52px;
+  cursor: pointer;
+  color: #383838;
+}
+.myProductDescription_div4_review {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 52px;
+  color: #383838;
+  cursor: pointer;
+}
+.myProductDescription_div5 {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+.myProductDescription_div5_para1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #030712;
+  height: 160px;
+}
+.myProductDescription_div5_para2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #030712;
+}
+.myProductReview_div5 {
+  width: 100%;
+  padding: 2rem 5rem;
+}
+.myProductReview_div5_review {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.6rem 0;
+  margin: 1.5rem 0;
+}
+.myProductReview_div5_review_imgDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.reviewerImage {
+  height: 56px;
+  width: 56px;
+}
+.reviewerInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+}
+.reviewerInfo_name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.reviewerInfo_review {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.reviewerInfo_points {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ce2225;
+}
+.reviewerInfo_stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.reviewerInfo_reviewDate {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #a7a7a7;
+}
+.reviewerInfo_comment {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+
+
+/* For max-width: 1024px (Tablet and below) */
+@media (max-width: 1024px) {
+  .myProductDescription_firstDiv {
+    padding: 0rem 2rem;
+  }
+
+  .myProductDescription_mainDiv {
+    flex-direction: column;
+    padding: 1rem;
+    height: auto;
+    gap: 10rem;
+  }
+
+  .myProductDescription_mainDiv_left {
+    width: 100%;
+    padding: 2rem 0;
+    gap: 1rem;
+  }
+
+  .myProductDescription_mainDiv_right {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .myProductDescription_mainDiv_right_div1 {
+    flex-direction: row;
+  }
+
+  .myProductDescription_mainDiv_right_div2 {
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .myProductDescription_mainDiv_right_div2_priceDiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .myProductDescription_mainDiv_right_div3 {
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .myProductDescription_mainDiv_right_div3_left {
+    width: 100%;
+  }
+
+  .myProductDescription_mainDiv_right_div3_left_decrement,
+  .myProductDescription_mainDiv_right_div3_left_increment {
+    width: 50px;
+    height: 50px;
+  }
+
+  .myProductDescription_mainDiv_right_div3_right {
+    height: 50px;
+  }
+
+  .myProductDescription_div4 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .myProductDescription_div5 {
+    padding: 2rem;
+  }
+
+  .myProductDescription_div5_para1,
+  .myProductDescription_div5_para2 {
+    font-size: 16px;
+  }
+
+  .myProductReview_div5 {
+    padding: 2rem;
+  }
+
+  .myProductReview_div5_review {
+    flex-direction: column;
+  }
+
+  .myProductReview_div5_review_imgDiv {
+    gap: 1rem;
+  }
+
+  .reviewerImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .reviewerInfo_name,
+  .reviewerInfo_review {
+    font-size: 16px;
+  }
+
+  .reviewerInfo_stars {
+    gap: 2px;
+  }
+
+  .reviewerInfo_reviewDate,
+  .reviewerInfo_comment {
+    font-size: 14px;
+  }
+}
+
+/* For max-width: 768px (Tablet) */
+@media (max-width: 768px) {
+  .myProductDescription_firstDiv {
+    padding: 0rem 1.5rem;
+  }
+
+  .myProductDescription_mainDiv {
+    padding: 1rem;
+    gap: 10rem;
+  }
+
+  .myProductDescription_mainDiv_left {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .myProductDescription_mainDiv_right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .myProductDescription_mainDiv_right_div1 {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .myProductDescription_mainDiv_right_div2 {
+    padding: 1rem 0;
+  }
+
+  .myProductDescription_mainDiv_right_div3_left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .myProductDescription_mainDiv_right_div3_left_decrement,
+  .myProductDescription_mainDiv_right_div3_left_increment {
+    width: 45px;
+    height: 45px;
+  }
+
+  .myProductDescription_mainDiv_right_div3_right {
+    height: 45px;
+  }
+
+  .myProductDescription_div4 {
+    gap: 1rem;
+  }
+
+  .myProductDescription_div5 {
+    padding: 2rem;
+  }
+
+  .myProductDescription_div5_para1,
+  .myProductDescription_div5_para2 {
+    font-size: 14px;
+  }
+
+  .myProductReview_div5_review {
+    gap: 1rem;
+  }
+
+  .reviewerImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  .reviewerInfo_name,
+  .reviewerInfo_review {
+    font-size: 16px;
+  }
+
+  .reviewerInfo_stars {
+    gap: 2px;
+  }
+
+  .reviewerInfo_reviewDate,
+  .reviewerInfo_comment {
+    font-size: 14px;
+  }
+}
+
+/* For max-width: 425px (Mobile) */
+@media (max-width: 426px) {
+  .myProductDescription_firstDiv {
+    padding: 0rem 1rem;
+  }
+
+  .myProductDescription_mainDiv {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .myProductDescription_mainDiv_left {
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .myProductDescription_mainDiv_right {
+    width: 100%;
+    padding: 1rem;
+    gap: 4rem;
+  }
+  .myProductDescription_mainDiv_right_div1_txt2{
+    font-size: 14px;
+  }
+  .myProductDescription_mainDiv_right_div1_txt3{
+    font-size: 14px;
+  }
+  .myProductDescription_mainDiv_right_div1_right{
+    align-self: flex-start;
+  }
+  .myProductDescription_firstDiv_t{
+    font-size: 14px;
+  }
+  .myProductDescription_mainDiv_right_div1_left{
+    width: 100%;
+  }
+  .myProductDescription_mainDiv_right_div2_heading,.myProductDescription_mainDiv_right_div2_price{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .myProductDescription_mainDiv_right_div2_delivery{
+    display: none;
+  }
+  .myProductDescription_mainDiv_right_div3{
+    flex-direction: column;
+  }
+  .myProductDescription_mainDiv_right_div1 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .myProductDescription_mainDiv_right_div2 {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+
+  .myProductDescription_mainDiv_right_div3_left {
+    width: 100%;
+    gap: 22px;
+        justify-content: flex-start;
+  }
+
+  .myProductDescription_mainDiv_right_div3_left_decrement,
+  .myProductDescription_mainDiv_right_div3_left_increment {
+    width: 40px;
+    height: 40px;
+  }
+
+  .myProductDescription_mainDiv_right_div3_right {
+    height: 40px;
+  }
+
+  .myProductDescription_div4 {
+    gap: 1rem;
+  }
+  .myProductDescription_div4_description,.myProductDescription_div4_review{
+    font-size: 16px;
+  }
+  .myProductDescription_div5 {
+    padding: 1rem;
+  }
+
+  .myProductDescription_div5_para1,
+  .myProductDescription_div5_para2 {
+    font-size: 12px;
+        line-height: 18px;
+  }
+
+  .myProductReview_div5_review {
+    gap: 1rem;
+  }
+
+  .reviewerImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reviewerInfo_name,
+  .reviewerInfo_review {
+    font-size: 14px;
+  }
+
+  .reviewerInfo_stars {
+    gap: 2px;
+  }
+
+  .reviewerInfo_reviewDate,
+  .reviewerInfo_comment {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,134 @@
+/* .LocationPopUp_container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.001);
+    background: transparent;
+    position: absolute;
+    z-index: 10;
+} */
+
+.LocationPopUp_container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+}
+.LocationPopUp_container_div {
+  max-width: 375px;
+  width: 100%;
+  border-radius: 18px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.LocationPopUp_container_crossDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.LocationPopUp_container_para1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  
+}
+.LocationPopUp_container_crossBtn {
+  color: #4e4e4e;
+  position: absolute;
+  font-weight: 700;
+  right: -15px;
+  cursor: pointer;
+}
+.LocationPopUp_container_simpleLine {
+  height: 1px;
+  width: 375px;
+  background-color: #d8d8d8;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  position: relative;
+  left: -2rem;
+}
+.LocationPopUp_container_para2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.locationInput {
+  max-height: 39px;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  padding: 0.6rem 0.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.locationInput input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.locationPopup_Button {
+  max-height: 47px;
+  border-radius: 6.41px;
+  background-color: #ce2225;
+  padding: 12.81px;
+  width: 100%;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14.41px;
+  line-height: 21.62px;
+}
+.LocationPopUp_container_div_orPara {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin: 1.5rem 0;
+}
+.LocationPopUp_container_div_locationDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LocationPopUp_container_div_location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 180px;
+  border: 1px solid #d8d8d8;
+  border-radius: 16px;
+  padding: 8px 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  gap: 0.4rem;
+}

@@ -1,55 +1,204 @@
-
-.navBarHead{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 68px;
-    padding:0 6rem;
-}
-.sunsoorHeaderDiv{
-    height: 68px;
-    width: 156px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navBarLinks{
-    width: 654px;
-    height:22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navLinksText li{
-    font-family: Inter,sans-serif;
-    font-weight: 600;
-    font-size:18px;
-    line-height: 21.78px;
+/* NavBar Container */
+.navBarHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  padding: 0 6rem;
+  transition: all 0.3s ease;
 }
 
-.navIcons{
+/* Sunsoor Header Logo Section */
+.sunsoorHeaderDiv {
+  height: 68px;
+  width: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation Links */
+.navBarLinks {
+  width: 654px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinksText li {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.navLinksText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Icons Section */
+.navIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.searchIcon,
+.userIcon {
+  height: 44.12px;
+  width: 44.12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIcon {
+  background-color: #ce2225;
+}
+
+.userIcon {
+  background-color: #f8eae4;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Default for larger screens */
+.navLinkText {
+  display: inline;
+  margin-right: 20px;
+  font-weight: 600;
+  color: black;
+  font-size: 18px; /* Default font size for larger screens */
+}
+
+/* For screens smaller than 1024px (Small Tablets / Mobile Landscape) */
+@media screen and (max-width: 1024px) {
+  .navLinksText{
+    width: 100%;
+  }
+  .navLinkText {
+    font-size: 14px; /* Font size for smaller screens */
+  }
+  .navBarHead {
+    padding: 0 2rem; /* Reduce padding for smaller screens */
+  }
+
+  .navBarLinks {
+    width: auto; /* Adjust the width for smaller screens */
+  }
+
+  .navLinksText {
+    gap: 1rem; /* Adjust spacing between links */
+  }
+
+  .navIcons {
+    gap: 0.5rem; /* Adjust gap between icons */
+  }
+
+  .HamburgerIcon {
+    display: flex; /* Show hamburger icon on smaller screens */
+  }
+}
+
+/* For screens smaller than 768px (Mobile Landscape) */
+@media screen and (max-width: 768px) {
+  .navLinkText {
+    font-size: 12px; /* Font size for mobile landscape */
+  }
+
+  .navBarHead {
+    padding: 0 1rem; /* Adjust padding for mobile */
+  }
+
+  .navIcons {
+    gap: 0.8rem; /* Adjust gap between icons */
+  }
+
+  .sunsoorHeaderDiv {
+    width: 120px; /* Make logo smaller on smaller screens */
+  }
+
+  .searchIcon,
+  .userIcon {
+    height: 36px;
+    width: 36px; /* Adjust icon size */
+  }
+
+  .HamburgerIcon {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:0.4rem;
+  }
 }
-.searchIcon{
-    height: 44.12px;
-    width:44.12px;
-    border-radius: 50%;
-    background-color: #CE2225;
+
+/* For screens smaller than 425px (Very Small Mobile Devices) */
+@media screen and (max-width: 427px) {
+  .navLinkText {
+    font-size: 10px; /* Further reduce font size for very small screens */
+  }
+
+  .navBarHead {
+    padding: 0 0.5rem; /* Reduce padding even more */
+  }
+
+  .navLinksText {
+    gap: 0.5rem; /* Reduce gap between links for very small screens */
+  }
+
+  .navIcons {
+    gap: 0.6rem; /* Reduce icon spacing */
+  }
+
+  .sunsoorHeaderDiv {
+    width: 100px; /* Make logo even smaller */
+  }
+
+  .searchIcon,
+  .userIcon {
+    height: 30px;
+    width: 30px; /* Adjust icon size for smaller screens */
+  }
+
+  .HamburgerIcon {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Display Hamburger only on 425px and below */
+  .HamburgerIcon {
+    display: block;
+  }
 }
-.userIcon{
-    height: 44.12px;
-    width:44.12px;
-    border-radius: 50%;
-    background-color: #F8EAE4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 45%;
+
+
+/* Default font size for larger screens */
+.navLinkText {
+  display: inline;
+  margin-right: 20px;
+  font-weight: 600;
+  color: black;
+  font-size: 18px; /* Default font size for larger screens */
 }
+
+/* For tablet screens, apply font size of 10px */
+.tabletFontSize {
+  font-size: 14px; /* Reduced font size for tablet screens */
+}
+

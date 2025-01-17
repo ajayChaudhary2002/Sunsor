@@ -1,0 +1,297 @@
+.fromSection_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 3rem 3rem 4rem;
+  background-color: #ce2225;
+}
+.fromSection_form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 3rem;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 32px;
+}
+.fromSection_form_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+  width: 100%;
+}
+.fromSection_form_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.ContactUs_inputField {
+  all: unset;
+  width: 100%;
+  background-color: #fafafa40;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  height: 60px;
+}
+.fromSection_formSubmit_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* CHECKBOX STYLING */
+
+.fromSection_form_checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  top: 3px;
+  margin-right: 0.5rem;
+}
+
+.fromSection_form_checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.fromSection_form_checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #ce2225;
+}
+
+.fromSection_form_checkbox:checked {
+  background-color: white;
+  border: 2px solid #ce2225;
+}
+
+.fromSection_form_checkbox:focus-visible {
+  outline: none;
+  box-shadow: 0 0 2px #ce2225;
+}
+
+/* CHECKBOX STYLING ENDED */
+
+.fromSection_form_submit {
+  width: 211px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ce2225;
+  margin-top: 1rem;
+}
+
+.ContactUs_RightPart {
+  background-color: #ffffff40;
+  border-radius: 32px;
+  align-self: flex-start;
+}
+.ContactUs_RightPart_container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 32px;
+  gap: 2rem;
+}
+
+.ContactUs_RightPart_container_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #fafafa;
+}
+.ContactUs_RightPart_container_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 8px;
+}
+.ContactUs_RightPart_container_div_text {
+  max-width: 300px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fafafa;
+}
+
+
+/* For devices with max-width: 1024px */
+@media screen and (max-width: 1024px) {
+  .fromSection_container {
+    flex-direction: row; /* Stack elements vertically */
+    padding: 3rem 2rem;
+    gap: 2rem;
+
+  }
+
+  .fromSection_form {
+    width: 100%; /* Full width on smaller screens */
+    padding: 2rem;
+    border-radius: 16px; /* Slightly smaller radius for smaller screens */
+  }
+
+  .fromSection_form_div {
+    gap: 1rem; /* Adjust gap for smaller screens */
+  }
+
+  .fromSection_form_text {
+    font-size: 16px; /* Smaller font size for text */
+    line-height: 24px;
+  }
+
+  .ContactUs_inputField {
+    height: 50px; /* Slightly smaller input height */
+  }
+
+  .fromSection_formSubmit_div {
+    flex-direction: column;
+    gap: 1rem; /* Adjust gap between items */
+  }
+
+  .fromSection_form_checkbox {
+    width: 18px;
+    height: 18px;
+  }
+
+  .fromSection_form_submit {
+    width: 100%; /* Full width for the submit button */
+    margin-top: 1.5rem;
+  }
+
+  .ContactUs_RightPart {
+    background-color: #ffffff40;
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  .ContactUs_RightPart_container {
+    padding: 2rem 1rem;
+  }
+
+  .ContactUs_RightPart_container_text {
+    font-size: 30px; /* Smaller font size */
+    line-height: 45px;
+  }
+
+  .ContactUs_RightPart_container_div_text {
+    font-size: 20px; /* Smaller font size */
+    line-height: 28px;
+  }
+}
+
+/* For devices with max-width: 768px */
+@media screen and (max-width: 768px) {
+  .fromSection_container {
+    padding: 2rem 1.5rem;
+  }
+
+  .fromSection_form {
+    padding: 1.5rem;
+    border-radius: 12px; /* Further reduce border radius */
+  }
+
+  .fromSection_form_text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .ContactUs_inputField {
+    height: 40px; /* Smaller input field */
+  }
+
+  .fromSection_form_submit {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .ContactUs_RightPart {
+    margin-top: 1.5rem;
+  }
+
+  .ContactUs_RightPart_container {
+    padding: 2rem 1rem;
+  }
+
+  .ContactUs_RightPart_container_text {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .ContactUs_RightPart_container_div_text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+/* For devices with max-width: 480px */
+@media screen and (max-width: 480px) {
+  .fromSection_container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .fromSection_form {
+    padding: 1rem;
+    border-radius: 8px; /* Further reduce border radius */
+  }
+
+  .fromSection_form_text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .ContactUs_inputField {
+    height: 40px; /* Even smaller input field */
+  }
+
+  .fromSection_form_submit {
+    height: 45px;
+    font-size: 14px;
+    width: 40%;
+  }
+
+  .ContactUs_RightPart {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .ContactUs_RightPart_container {
+    padding: 1.5rem 1rem;
+  }
+
+  .ContactUs_RightPart_container_text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .ContactUs_RightPart_container_div_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

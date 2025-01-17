@@ -1,0 +1,326 @@
+.checkoutContainer {
+  width: 100vw;
+}
+.checkoutContainer_mainContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+.checkoutContainer_mainContent_leftPart {
+  width: 60%;
+}
+.checkoutContainer_mainContent_leftPart_Notification {
+  width: 100%;
+  max-width: 845px;
+  height: 136px;
+  border: 0.8px solid #a7a7a7;
+  border-radius: 6.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+.checkoutContainer_mainContent_leftPart_Notification_para1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_leftPart_Notification_para2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_leftPart_Notification_para3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_leftPart_Heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 1rem 0;
+  color: #000000;
+  border-bottom: 0.8px solid #a7a7a7;
+  margin-bottom: 2rem;
+}
+.checkoutContainer_mainContent_leftPart_Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.checkoutContainer_mainContent_leftPart_Form_Div {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.checkoutContainer_mainContent_leftPart_Form_commonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+}
+.checkoutContainer_mainContent_leftPart_Form_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #000000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.7rem;
+}
+.checkoutContainer_mainContent_leftPart_Form_input {
+  width: 100%;
+  max-width: 409px;
+  border: 0.8px solid rgba(167, 167, 167, 0.5);
+  border-radius: 6.4px;
+  height: 48px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #000000;
+  padding: 0 1rem;
+}
+.checkoutContainer_mainContent_leftPart_Form_check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.checkoutContainer_mainContent_leftPart_Form_check_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16.8px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_leftPart_Form_AddNote {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin: 0.7rem 0;
+}
+
+.checkoutContainer_mainContent_leftPart_Form_check_TextArea {
+  width: 100%;
+  max-width: 844px;
+  height: 96px;
+  border-radius: 6.4px;
+  border: 0.8px solid #a7a7a7;
+  resize: none;
+}
+
+.checkoutContainer_mainContent_rightPart {
+  max-width: 410px;
+  width: 40%;
+  background-color: #fafafa;
+  border-radius: 6.4px;
+  border: 0.8px solid #a7a7a7;
+  padding: 2rem 1rem;
+}
+.checkoutContainer_mainContent_rightPart_heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_rightPart_heading_div1 {
+  max-width: 371px;
+  width: 100%;
+  height: 128px;
+  border-bottom: 0.8px solid #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem 0 2rem 0;
+  gap: 1rem;
+}
+.checkoutContainer_mainContent_rightPart_heading_div1_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.checkoutContainer_mainContent_rightPart_heading_div1_data_left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.checkoutContainer_mainContent_rightPart_heading_div1_data_left_para,
+.checkoutContainer_mainContent_rightPart_heading_div1_data_right_price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_rightPart_heading_div1_data_left_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #a7a7a7;
+}
+.checkoutContainer_mainContent_rightPart_heading_div2 {
+  max-width: 368px;
+  width: 100%;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  border-bottom: 0.8px solid #a7a7a7;
+  padding-top: 1rem;
+}
+.checkoutContainer_mainContent_rightPart_heading_div2_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkoutContainer_mainContent_rightPart_heading_div2_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #a7a7a7;
+}
+.checkoutContainer_mainContent_rightPart_heading_div3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 367px;
+  width: 100%;
+  height: 54.4px;
+  border-bottom: 0.8px solid #a7a7a7;
+}
+.checkoutContainer_mainContent_rightPart_heading_div3_para {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19.2px;
+  line-height: 28.8px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_rightPart_heading_div3_price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19.2px;
+  line-height: 28.8px;
+  color: #ce2225;
+}
+.checkoutContainer_mainContent_rightPart_heading_div4 {
+  max-width: 198px;
+  width: 100%;
+  height: 181px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem 0;
+}
+.checkoutContainer_mainContent_rightPart_heading_payment {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_rightPart_heading_div4_ {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.checkoutContainer_mainContent_rightPart_heading_div4_ p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.checkoutContainer_mainContent_rightPart_heading_checkoutButton {
+  max-width: 367px;
+  width: 100%;
+  height: 46px;
+  border-radius: 6.4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ce2225;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #fafafa;
+  margin: 0.4rem 0 1rem 0;
+}
+.checkoutContainer_mainContent_rightPart_heading_backToArt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 21.6px;
+  color: #000000;
+  text-align: center;
+  padding: 0.4rem;
+}
+.checkoutContainer_mainContent_rightPart_heading_div4_ input[type="checkbox"] {
+  width: 19px; /* Set checkbox size */
+  height: 19px; /* Set checkbox size */
+  border: 1.6px solid #d9d9d9; /* Set border for checkboxes */
+  appearance: none; /* Remove default appearance */
+  background-color: white; /* Set background color for checkboxes */
+  cursor: pointer; /* Make the checkbox interactive */
+  position: relative; /* Necessary for the checkmark */
+  display: inline-block; /* Prevent collapsing */
+  border-radius: 0; /* Ensure square shape */
+}
+
+.checkoutContainer_mainContent_rightPart_heading_div4_
+  input[type="checkbox"]:checked {
+  background-color: #ce2225; /* Red background when checked */
+  border: 1.6px solid #ce2225; /* Optional: change border color */
+}
+
+.checkoutContainer_mainContent_rightPart_heading_div4_
+  input[type="checkbox"]:checked::before {
+  content: "✔";
+  position: absolute;
+  top: -3px; /* Center the checkmark vertically */
+  left: 3px; /* Center the checkmark horizontally */
+  font-size: 14px; /* Size of the checkmark */
+  color: white; /* White color for the checkmark */
+}
