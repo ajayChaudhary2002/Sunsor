@@ -54,3 +54,140 @@
   font-size: 18px;
   color: white;
 }
+
+
+
+
+/* Tablet responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+  .CreateAccountPopUp {
+    padding: 3rem 0; /* Adjust padding for tablets */
+  }
+
+  .CreateAccountPopUp_container {
+    padding: 0rem 2rem;
+    width: 50%;
+  }
+
+  .CreateAccountPopUp_container_main_Header {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .CreateAccountPopUp_container_main_email,
+  .CreateAccountPopUp_container_main_password {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .CreateAccountPopUp_container_main_password_label,
+  .CreateAccountPopUp_container_main_email_label {
+    height: 95px;
+  }
+
+  .CreateAccountPopUp_container_main_email_input,
+  .CreateAccountPopUp_container_main_password_input {
+    max-width: 100%; /* Ensure input fields take full width */
+    height: 40px;
+  }
+
+  .CreateAccountPopUp_CREATE {
+    height: 44px;
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+
+  .CreateAccountPopUp_txt {
+    font-size: 15px; /* Slightly larger text */
+  }
+
+  .CreateAccountPopUp_socials {
+    gap: 0.75rem; /* Slightly larger gap between icons */
+    height: 20px;
+  }
+
+  .CreateAccountPopUp_txt2 {
+    font-size: 13px; /* Slightly larger text */
+  }
+
+  .CreateAccountPopUp_container_main_password_input_img2,
+  .CreateAccountPopUp_container_main_email_img {
+    top: 44px;
+  }
+
+  .CreateAccountPopUp_container_main_password_input_img1 {
+    top: 42px;
+  }
+  .loginPage_additionalDiv_left{
+    font-size: 14px;
+  }
+  .loginPage_additionalDiv_para{
+    font-size: 12px;
+  }
+}
+
+
+/* Mobile responsiveness (max-width: 480px) */
+@media (max-width: 480px) {
+  .CreateAccountPopUp {
+    padding: 2rem 0; /* Reduced padding for mobile */
+  }
+
+  .CreateAccountPopUp_container {
+    padding: 1.5rem; /* Reduced padding for smaller screens */
+    width: 90%; /* Make the container responsive */
+    border-radius: 16px; /* Adjust border radius for small screens */
+  }
+
+  .CreateAccountPopUp_container_main_Header {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 1rem; /* Reduced margin for mobile */
+  }
+
+  .CreateAccountPopUp_container_main_email_label,
+  .CreateAccountPopUp_container_main_password_label {
+    gap: 4px; /* Reduced gap between label and input */
+  }
+
+  .CreateAccountPopUp_container_main_email,
+  .CreateAccountPopUp_container_main_password {
+    font-size: 12px;
+  }
+
+  .CreateAccountPopUp_container_main_email_input,
+  .CreateAccountPopUp_container_main_password_input {
+    max-width: 100%; /* Full width of container */
+    padding-left: 2rem; /* Adjust padding for smaller inputs */
+  }
+
+  .CreateAccountPopUp_CREATE {
+    max-width: 100%; /* Full width on smaller devices */
+    height: 40px;
+    font-size: 12px; /* Smaller font size */
+    margin-top: 1rem;
+  }
+
+  .CreateAccountPopUp_txt {
+    font-size: 14px; /* Smaller text for mobile */
+    margin-top: 1rem;
+  }
+
+  .CreateAccountPopUp_socials {
+    gap: 0.5rem; /* Reduced gap between social icons */
+  }
+
+  .CreateAccountPopUp_txt2 {
+    font-size: 12px; /* Smaller text for the link */
+    text-align: center;
+  }
+
+  .CreateAccountPopUp_container_main_password_input_img2,
+  .CreateAccountPopUp_container_main_email_img {
+    top: 52px; /* Adjust icon position */
+  }
+
+  .CreateAccountPopUp_container_main_password_input_img1 {
+    top: 50px; /* Adjust icon position */
+  }
+}

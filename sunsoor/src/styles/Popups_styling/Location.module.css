@@ -132,3 +132,22 @@
   color: #000000;
   gap: 0.4rem;
 }
+
+@media (max-width:480px)
+{
+  .LocationPopUp_container_div{
+    width: 80%;
+  }
+  .LocationPopUp_container_simpleLine{
+    width: 340px;
+  }
+}
+@media (max-width:380px)
+{
+  .LocationPopUp_container_div{
+    width: 80%;
+  }
+  .LocationPopUp_container_simpleLine{
+    width: 300px;
+  }
+}

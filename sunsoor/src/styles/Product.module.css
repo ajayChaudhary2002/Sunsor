@@ -1083,57 +1083,73 @@
 
 @media (max-width: 768px) {
   .ProductPageMainDiv {
-    padding: 2rem;
-    flex-direction: column;
-    align-items: center;
+    padding: 1rem;
+    flex-direction: row;
   }
+
   .ProductPageMainDiv_leftPart {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
-    margin-bottom: 5rem;
+    width: 70%;
+    margin-bottom: 3rem;
+    display: block;
   }
+
   .ProductPageMainDiv_RightPart_ITEMS {
     grid-template-columns: 1fr;
   }
+
   .ProductPageMainDiv_RightPart_ITEMS_listView {
     flex-direction: column;
   }
+
   .productPaginationDiv_container {
     flex-direction: row;
   }
 
+  /* Re-display the line */
+  .ProductPageMainDiv_leftPart_line {
+    display: block;
+    width: 100%; /* Ensure the line spans the full width */
+    background-color: #a7a7a7; /* Set the background color if needed */
+  }
 
+  .ProductPageMainDiv_leftPart_div1 {
+    width: 100%;
+  }
 
-  
-.ProductPageMainDiv_leftPart_line{
-  display: none;
+  .ProductPageMainDiv_leftPart_Div2,
+  .ProductPageMainDiv_leftPart_Div3,
+  .ProductPageMainDiv_leftPart_Div4,
+  .ProductPageMainDiv_leftPart_Div5 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .ProductPageMainDiv_leftPart_Div4_filterTextDiv_content {
+    gap: 15px;
+  }
+  .ProductPageMainDiv_RightPart_Header_left_text{
+    font-size: 12px;
+    width: 40%;
+  }
+  .ProductPageMainDiv_RightPart_Header_left_dropDown{
+    width:40%;
+    font-size: 12px;
+  }
+  .ProductPageMainDiv_RightPart_Header_left{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .ProductPageMainDiv_RightPart_Header_right{
+    font-size: 12px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .ProductPageMainDiv_RightPart_Header{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
-.ProductPageMainDiv_leftPart_div1{
-  width: 100%;
-}
-.ProductPageMainDiv_leftPart_Div2{
-  align-self: flex-end;
-  width: 40%;
-}
-.ProductPageMainDiv_leftPart_Div3{
-  width:35%;
-}
-.ProductPageMainDiv_leftPart_Div5{
-  width: 100%;
-  align-self: center;
-}
-.ProductPageMainDiv_leftPart_Div4{
-  align-self:flex-start ;
-  width: 40%;
-}
-.ProductPageMainDiv_leftPart_Div4_filterTextDiv_content{
-  gap:29px;
-}
-}
+
 
 @media (max-width: 426px) {
   .ProductPageMainDiv {

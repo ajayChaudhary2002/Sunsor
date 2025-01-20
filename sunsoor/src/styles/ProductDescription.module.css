@@ -723,7 +723,7 @@
   .myProductDescription_mainDiv_right_div3_left {
     width: 100%;
     gap: 22px;
-        justify-content: flex-start;
+    justify-content: center;
   }
 
   .myProductDescription_mainDiv_right_div3_left_decrement,
@@ -733,7 +733,7 @@
   }
 
   .myProductDescription_mainDiv_right_div3_right {
-    height: 40px;
+    height: 50px;
   }
 
   .myProductDescription_div4 {
@@ -743,7 +743,7 @@
     font-size: 16px;
   }
   .myProductDescription_div5 {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .myProductDescription_div5_para1,

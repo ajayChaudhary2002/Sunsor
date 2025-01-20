@@ -9,62 +9,91 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import style2 from "../styles/HeaderForProduct.module.css";
 import { FaBars } from "react-icons/fa";
+import NavBarOptions from "./PopUps/NavBarOptions";
 const NavBar = ({ setLoginPopup, setCreatePopup, showProfile }: any) => {
   const location = useLocation();
 
   const [accountDropDown, setAccountDropDown] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const hamburgerRef = useRef<HTMLDivElement | null>(null); 
+  const userIconRef = useRef<HTMLDivElement | null>(null); 
+
+  const [openOption,setOpenOption]=useState(false);
+  const toggleHamburger = () => {
+    
+    if (accountDropDown) {
+      setAccountDropDown(false);
+    }
+    
+    setOpenOption(prev => !prev);
+  };
+  
+  const toggleUserIcon = () => {
+    
+    if (openOption) {
+      setOpenOption(false);
+    }
+    
+    setAccountDropDown(prev => !prev);
+  };
+  
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        (hamburgerRef.current && !hamburgerRef.current.contains(event.target)) &&
+        (userIconRef.current && !userIconRef.current.contains(event.target)) &&
+        !event.target.closest(`.${style2.headerForProductContainer_DropDown}`) 
+      ) {
         setAccountDropDown(false);
+        setOpenOption(false);
       }
     };
-
-    document.addEventListener("mousedown", handleClickOutside);
+  
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  
+  
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
   
-    // Update viewport width on window resize
+    
     useEffect(() => {
       const handleResize = () => {
         setViewportWidth(window.innerWidth);
       };
   
-      // Add resize event listener
+      
       window.addEventListener('resize', handleResize);
   
-      // Clean up the event listener when the component is unmounted
+      
       return () => {
         window.removeEventListener('resize', handleResize);
       };
     }, []);
     const isTablet = viewportWidth <= 768;
     const isSmTablet = viewportWidth <= 425;
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu visibility
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
-    // Toggle the menu visibility
+    
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
   return (
     <div className={style.navBarHead}>
-      {/* SUNSOOR LOGO */}
+      {}
       <div className={style.sunsoorHeaderDiv}>
         <NavLink to="/">
           <img src={sunsorHeader} alt="" className={style.sunsoorLogo} />
         </NavLink>
       </div>
 
-      {/* LIST OF ALL THE PAGES */}
+      {}
       <div className={style.navBarLinks}>
-  {/* Hamburger icon, only visible when width is less than 425px (isSmTablet) */}
+  {}
   
 
-  {/* Normal navbar for larger screens */}
+  {}
   {!isSmTablet && (
   <div className={style.navLinksText}>
     <NavLink to="/ourProduct" style={{ textDecoration: "none" }}>
@@ -96,18 +125,23 @@ const NavBar = ({ setLoginPopup, setCreatePopup, showProfile }: any) => {
 
 
 
-      {/* SEARCH ICON AND USER ICON */}
+      {}
       <div className={style.navIcons}>
       {isSmTablet && (
     <div
       style={{
         cursor: "pointer",
         fontSize: "24px",
+        position:"relative"
       }}
+      
     >
-      <div className={style.HamburgerIcon}>
+      <div className={style.HamburgerIcon} onClick={toggleHamburger} ref={hamburgerRef} >
       <FaBars />
         </div>
+        {
+          openOption && <NavBarOptions/>
+        }
     </div>
   )}
         <div className={style.searchIcon}>
@@ -120,10 +154,10 @@ const NavBar = ({ setLoginPopup, setCreatePopup, showProfile }: any) => {
         ) : (
           <div
             className={style.userIcon}
-            onClick={() => setAccountDropDown((prev) => !prev)}
-            ref={dropdownRef}
+            onClick={toggleUserIcon}
+            ref={userIconRef}
           >
-            <img src={userIcon} alt="" />
+            <img src={userIcon} alt=""  />
             {accountDropDown && (
               <div className={style2.headerForProductContainer_DropDown}>
                 <p

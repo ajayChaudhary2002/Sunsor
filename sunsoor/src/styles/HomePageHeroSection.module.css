@@ -10,7 +10,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 .section1Container, .section1Container1, .section1Container2 {
@@ -1310,5 +1310,29 @@ html, body {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+  }
+}
+
+@media (max-width:380px)
+{
+  .imgSection{
+    width: 70%;
+    
+  }
+  .someTextUpper{
+    font-size: 13px;
+  }
+  .littleText{
+    font-size: 11px;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .someText{
+    position: relative;
+    right: 2rem;
+  }
+  .randomImages{
+    margin-left: 12rem;
+
   }
 }
