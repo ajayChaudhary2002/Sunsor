@@ -195,8 +195,9 @@
   }
 
   .headerForProductContainer_DropDown {
-    width: 90px; /* Adjust width of dropdown */
-    height: 90px; /* Adjust height */
+    width: 110px; /* Adjust width of dropdown */
+    height: 110px;
+    right: -6px; /* Adjust height */
   }
 
   .headerForProductContainer_DropDown_text {
@@ -265,8 +266,8 @@
   }
 
   .headerForProductContainer_DropDown {
-    width: 90px; /* Adjust width of dropdown */
-    height: 90px; /* Adjust height */
+    width: 110px; /* Adjust width of dropdown */
+    height: 120px; /* Adjust height */
   }
 
   .headerForProductContainer_DropDown_text {
@@ -340,8 +341,10 @@
   }
 
   .headerForProductContainer_DropDown {
-    width: 90px; /* Adjust width of dropdown */
-    height: 90px; /* Adjust height */
+    width: 120px;
+    height: 100px;
+    top: 50px;
+    z-index: 6;
   }
 
   .headerForProductContainer_DropDown_text {

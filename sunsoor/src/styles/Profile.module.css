@@ -390,7 +390,13 @@
     height: 50px;
   }
 }
-
+.dropdownProfile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
 /* Tablet responsiveness (max-width: 768px) */
 @media screen and (max-width: 768px) {
@@ -468,7 +474,7 @@
 
 
 /* Mobile responsiveness (max-width: 425px) */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
   .ProfileTopPart {
     padding: 0 1rem;
   }
@@ -485,8 +491,13 @@
   }
 
   .Profile_mainContent_leftPart_item {
-    padding: 0.5rem 2rem;
+    padding: 2rem;
     width: 100%;
+    background-color: #fafafa;
+    border-radius: 0px;
+  }
+  .dropdownProfile{
+    gap: 0 !important;
   }
 
   .Profile_mainContent_rightPart {
@@ -547,10 +558,3 @@
 }
 
 
-.dropdownProfile{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1rem;
-  margin-top: 1rem;
-}

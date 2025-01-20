@@ -14,6 +14,7 @@ import style2 from "../styles/NavBar.module.css";
 import userIcon from "../assetss/userIcon.svg";
 import style3 from "../styles/NavBar.module.css";
 import { FaBars } from "react-icons/fa";
+import NavBarOptions from "./PopUps/NavBarOptions";
 const HeaderForProduct = ({
   inCart,
   showNavOption,
@@ -24,41 +25,61 @@ const HeaderForProduct = ({
 }: any) => {
   const [openLocation, setOpenLocation] = useState(false);
   const [accountDropDown, setAccountDropDown] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const userIconRef = useRef<HTMLDivElement | null>(null);
   const [login, setLogin] = useState(false);
-
+  const [openOption,setOpenOption]=useState(false);
+  const hamburgerRef=useRef<HTMLDivElement | null>(null);
+  const toggleHamburger = () => {
+    setOpenOption(prev => !prev); 
+    if (accountDropDown) {
+      setAccountDropDown(false); 
+    }
+  };
   
-
+  const toggleUserIcon = () => {
+    setAccountDropDown(prev => !prev); 
+    if (openOption) {
+      setOpenOption(false); 
+    }
+  };
+  
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        (hamburgerRef.current && !hamburgerRef.current.contains(event.target)) &&
+        (userIconRef.current && !userIconRef.current.contains(event.target)) &&
+        !event.target.closest(`.${style2.headerForProductContainer_DropDown}`) 
+      ) {
         setAccountDropDown(false);
+        setOpenOption(false);
       }
     };
-
-    document.addEventListener("mousedown", handleClickOutside);
+  
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+  
+  
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
     
-      // Update viewport width on window resize
+      
       useEffect(() => {
         const handleResize = () => {
           setViewportWidth(window.innerWidth);
         };
     
-        // Add resize event listener
+        
         window.addEventListener('resize', handleResize);
     
-        // Clean up the event listener when the component is unmounted
+        
         return () => {
           window.removeEventListener('resize', handleResize);
         };
       }, []);
   const isTablet = viewportWidth <= 768;
-    const isSmTablet = viewportWidth <= 425;
+    const isSmTablet = viewportWidth <= 480;
   return (
     <div>
       <div
@@ -87,10 +108,10 @@ const HeaderForProduct = ({
 
           {showNavOption && (
             <div className={style2.navBarLinks}>
-            {/* Hamburger icon, only visible when width is less than 425px (isSmTablet) */}
+            {}
             
           
-            {/* Normal navbar for larger screens */}
+            {}
             {!isSmTablet && !isTablet &&(
             <div className={style2.navLinksText}>
               <NavLink to="/ourProduct" style={{ textDecoration: "none" }}>
@@ -118,16 +139,20 @@ const HeaderForProduct = ({
           
           </div>
           )}
-          {isSmTablet || isTablet &&(
+          {(isSmTablet || isTablet) &&(
     <div
       style={{
         cursor: "pointer",
         fontSize: "24px",
+        position:"relative"
       }}
     >
-      <div className={style.HamburgerIcon}>
+      <div className={style.HamburgerIcon} onClick={toggleHamburger} ref={hamburgerRef}>
       <FaBars />
         </div>
+        {
+          openOption && <NavBarOptions/>
+        }
     </div>
   )}
           <div className={style.searchIconDiv}>
@@ -154,10 +179,10 @@ const HeaderForProduct = ({
             !login && (
               <div
                 className={style.headerForProductContainer_logo}
-                onClick={() => setAccountDropDown((prev) => !prev)}
-                ref={dropdownRef}
+                onClick={toggleUserIcon}
+                ref={userIconRef}
               >
-                <img src={accountLogo} alt="" style={{ cursor: "pointer" }} />
+                <img src={accountLogo} alt="" style={{ cursor: "pointer",width:isSmTablet ? "44%":"" }} />
                 {accountDropDown && (
                   <div className={style.headerForProductContainer_DropDown}>
                     <p

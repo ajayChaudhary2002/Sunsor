@@ -221,7 +221,9 @@ const Profile = () => {
                 className={style.Profile_mainContent_leftPart_item}
                 style={{
                   backgroundColor:
-                    "#FFF2F2"
+                    "#FFF2F2",
+                    borderRadius:"8px",
+                    padding:"1.5rem 2rem"
                 }}
                 onClick={() => {setCurrentSection("myProfile"); setIsDropdownOpen(prev=>!prev)}}
               >
