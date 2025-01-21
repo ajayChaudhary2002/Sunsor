@@ -165,3 +165,28 @@ html, body {
     font-size: 12px;
 }
 }
+@media (max-width: 320px) {
+  .headerPart {
+      /* Stack elements vertically */
+      padding: 1rem; /* Reduce padding */
+      text-align: center; /* Center-align text */
+      gap: 1rem; /* Add gap between elements */
+  }
+
+  .starDiv {
+      flex-direction: column; /* Stack stars vertically */
+      gap: 0.5rem; /* Reduce gap between star items */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .starDivText {
+    font-size: 10px;
+    text-align: center;
+    width: 14rem;
+  }
+  .starDivBoldPart {
+    font-size: 8px;
+}
+}

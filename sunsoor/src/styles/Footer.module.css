@@ -449,3 +449,15 @@
     right: 0;
   }
 }
+
+@media(max-width:320px)
+{
+  .mainFooter_div3_bottomPart_para{
+    padding-left: 0;
+  }
+  .mainFooter_div2_topPart_header, .mainFooter_div2_topPart_txt, .mainFooter_div2_bottomPart_para,.mainFooter_div3_bottomPart_para{
+    font-size: 10px;
+    line-height: 20px;
+    text-align: start;
+}
+}

@@ -329,15 +329,16 @@ html, body {
   }
 
   .section1LargeText {
-    font-size: 28px;
-    margin-left: 46px;
+    font-size: 24px;
+    margin-left: 38px;
     text-align: center;
+    line-height: 60px;
   }
 
   .section1Para {
     font-size: 16px;
-     margin-left: 48px;
-     width: 90%;
+    margin-left: 44px;
+    width: 80%;
   }
 
   .imgSection {
@@ -348,7 +349,7 @@ html, body {
 
   .exploreButton {
     margin-left: 48px;
-    width: 8rem;
+    width: 9rem;
     text-align: center;
   }
 
@@ -364,6 +365,18 @@ html, body {
     font-size: 10px;
     max-width: 183px;
     width: 100%;
+  }
+  .childDiv1{
+    left: -21px;
+    width: 40px;
+  }
+  .childDiv2{
+    left:6px;
+    width: 40px;
+  }
+  .childDiv3{
+    left:34px;
+    width: 40px;
   }
 }
 
@@ -714,7 +727,7 @@ html, body {
 }
 
 /* For screens smaller than 425px (Mobile Portrait) */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 480px) {
   .heroSectionRedPart {
     padding-top: 0.5rem;
     padding-bottom: 8rem;
@@ -748,10 +761,11 @@ html, body {
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    gap: 0;
   }
 
   .heroSectionRedPartFooter_heading {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     text-align: center;
   }
@@ -759,9 +773,69 @@ html, body {
   .heroSectionRedPartFooter_para1,
   .heroSectionRedPartFooter_para2,
   .heroSectionRedPartFooter_para3 {
-    font-size: 12px;
+    font-size: 8px;
     line-height: 24px;
     gap: 0.3rem;
+    text-align: center;
+  }
+
+  .heroSectionRedPartFooterDiv{
+    width: 90%;
+  }
+  .heroSectionRedPartFooter_oilImage {
+    height: 120px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .heroSectionRedPart {
+    padding-top: 0.5rem;
+    padding-bottom: 8rem;
+  }
+
+  .heroSectionRedPartHeading {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .heroSectionRedPartPara {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .heroSectionRedPartObjectDiv {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 2rem;
+  }
+  .heroSectionProductText {
+    font-size: 18px;
+    line-height: 16px;
+  }
+
+  .heroSectionRedPartFooter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    gap: 0;
+  }
+
+  .heroSectionRedPartFooter_heading {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .heroSectionRedPartFooter_para1,
+  .heroSectionRedPartFooter_para2,
+  .heroSectionRedPartFooter_para3 {
+    font-size: 8px;
+    line-height: 24px;
+    gap: 0.5rem;
     text-align: center;
   }
 
@@ -1313,23 +1387,24 @@ html, body {
   }
 }
 
-@media (max-width:380px)
+@media (max-width:320px)
 {
   .imgSection{
-    width: 70%;
+    width: 77%;
     
   }
   .someTextUpper{
-    font-size: 13px;
+    font-size: 8px;
+    width: 7rem;
   }
   .littleText{
-    font-size: 11px;
+    font-size: 8px;
     justify-content: center;
-    gap: 1rem;
+    gap: 10px;
   }
   .someText{
     position: relative;
-    right: 2rem;
+    right: 3rem;
   }
   .randomImages{
     margin-left: 12rem;
