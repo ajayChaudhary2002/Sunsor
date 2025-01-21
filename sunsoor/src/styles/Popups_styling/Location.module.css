@@ -142,12 +142,12 @@
     width: 340px;
   }
 }
-@media (max-width:380px)
+@media (max-width:320px)
 {
   .LocationPopUp_container_div{
     width: 80%;
   }
   .LocationPopUp_container_simpleLine{
-    width: 300px;
+    width: 256px;
   }
 }

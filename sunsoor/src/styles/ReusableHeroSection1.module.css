@@ -497,6 +497,89 @@
   }
 
   .heroSectionRedPartFooter_heading {
+    font-size: 14px;
+  }
+
+  .heroSectionRedPartFooter_para1 {
+    font-size: 10px;
+    line-height: 30px;
+  }
+
+  .heroSectionRedPartFooter_oilImage {
+    width: 80%;
+    right: -4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+
+  .section4Container_foodContainerDiv{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .heroSectionRedPartFooterDiv {
+    width: 100%;
+    top: 6rem;
+  }
+
+  .heroSectionRedPartFooter {
+    
+    padding: 1rem;
+  }
+
+  .section4Container {
+    padding: 4rem 1rem;
+  }
+
+  .section4Container_leftContainer_para {
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .section4Container_leftContainer_imageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 6rem;
+  }
+
+  .section4Container_leftContainer_foodDiv {
+    width: 90%;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .section4Container_leftContainer_foodDiv_para2 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .section4Container_rightContainer_leftPart {
+    width: 76%;
+    position: relative;
+    gap: 20rem;
+  }
+
+  .section4Container_rightContainer_rightPart {
+    width: 180px;
+    left: 46px;
+    top: 14rem;
+  }
+
+  .section1Container_rightContainer_topDiv {
+    width: 100%;
+  }
+
+  .section1Container_rightContainer_bottomDiv {
+    width: 259px;
+    position: relative;
+  }
+
+  .heroSectionRedPartFooter_heading {
     font-size: 18px;
   }
 
