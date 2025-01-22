@@ -78,8 +78,10 @@ const HeaderForProduct = ({
           window.removeEventListener('resize', handleResize);
         };
       }, []);
-  const isTablet = viewportWidth <= 768;
-    const isSmTablet = viewportWidth <= 480;
+  const isTablet = viewportWidth <= 807;
+    const isSmTablet = viewportWidth <= 600;
+    const largeScreen=viewportWidth>=1025;
+    const smallScreen=viewportWidth<=480;
   return (
     <div>
       <div
@@ -108,30 +110,26 @@ const HeaderForProduct = ({
 
           {showNavOption && (
             <div className={style2.navBarLinks}>
-            {}
-            
-          
-            {}
             {!isSmTablet && !isTablet &&(
-            <div className={style2.navLinksText}>
-              <NavLink to="/ourProduct" style={{ textDecoration: "none" }}>
-                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`}>Our Product</p>
+            <div className={style2.navLinksText} style={{position:"relative",right: largeScreen ? "1rem":"4rem"}}>
+              <NavLink to="/ourProduct" style={{ textDecoration: "none", }}>
+                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`} style={{marginRight:'0'}}>Our Product</p>
               </NavLink>
           
               <NavLink to="/ourStory" style={{ textDecoration: "none" }}>
-                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`}>Our Story</p>
+                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`} style={{marginRight:'0'}}>Our Story</p>
               </NavLink>
           
               <NavLink to="/blogs" style={{ textDecoration: "none" }}>
-                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`}>Blogs</p>
+                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`} style={{marginRight:'0'}}>Blogs</p>
               </NavLink>
           
               <NavLink to="/aboutUs" style={{ textDecoration: "none" }}>
-                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`}>About Us</p>
+                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`} style={{marginRight:'0'}}>About Us</p>
               </NavLink>
           
               <NavLink to="/contactUs" style={{ textDecoration: "none" }}>
-                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`}>Contact Us</p>
+                <p className={`${style2.navLinkText} ${isTablet ? style2.tabletFontSize : ''}`} style={{marginRight:'0'}}>Contact Us</p>
               </NavLink>
             </div>
           )}
@@ -156,7 +154,7 @@ const HeaderForProduct = ({
     </div>
   )}
           <div className={style.searchIconDiv}>
-          <div className={`${style2.searchIcon} ${style.icon}`}>
+          <div className={`${style2.searchIcon} ${style.icon}`} style={{height:smallScreen ? "30px": "", width: smallScreen?"30px":""}}>
             <img src={magnify} alt="" className={style.magnify} />
           </div>
           </div>
@@ -172,7 +170,7 @@ const HeaderForProduct = ({
           {showProfile ? (
             <div className={style.userIconShape}>
               <NavLink to="/Profile" className={`${style3.userIcon} ${style.userIcon}`}>
-              <img src={userIcon} alt=""  className={style.userIconImg}/>
+              <img src={accountLogo} alt="" style={{ cursor: "pointer",width:isSmTablet ? "44%":"" }} />
             </NavLink>
               </div>
           ) : (
@@ -240,11 +238,11 @@ const HeaderForProduct = ({
                   />
                 )}
               </div>
-              <div className={style.headerForProductContainer_locationTextDiv}>
+              {!isSmTablet && <div className={style.headerForProductContainer_locationTextDiv}>
                 <p className={style.LocationText}>
                   Dehradun, Uttarakhand  - 248171, INDIA
                 </p>
-              </div>
+              </div>}
             </div>
           )}
         </div>

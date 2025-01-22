@@ -79,7 +79,7 @@ const Profile = () => {
       // Check screen width when the component mounts and on resize
       useEffect(() => {
         const checkScreenWidth = () => {
-          setIsMobileView(window.innerWidth <= 425); // Mobile view logic
+          setIsMobileView(window.innerWidth <= 480); // Mobile view logic
         };
     
         checkScreenWidth(); // Check initial screen width
@@ -838,6 +838,112 @@ const Profile = () => {
           </div>
         ) : (
           <div className={style.Profile_mainContent_wishList}>
+           <div  className={style.Profile_mainContentDropDown}> 
+            <div
+                className={style.Profile_mainContent_leftPart_item}
+                style={{
+                  backgroundColor:
+                    "#FFF2F2",
+                    borderRadius:"8px",
+                    padding:"1.5rem 2rem"
+                }}
+                onClick={() => {setCurrentSection("myProfile"); setIsDropdownOpen(prev=>!prev)}}
+              >
+                <img
+                  src={selectedItem==='My Profile'? redUserIcon:selectedItem==='Orders'?pic2: selectedItem==='Address'?deliveryRed:selectedItem==='Password'?redKey:pic5}
+                  alt=""
+                />
+                <p
+                  className={style.Profile_mainContent_leftPart_item_text}
+                  style={{
+                    color:"#CE2225",
+                  }}
+                  onClick={() => setCurrentSection("myProfile")}
+                >
+                  {selectedItem}
+                </p>
+            </div>
+            {
+              isDropdownOpen &&
+              <div className={style.dropdownProfile}> 
+                <div
+                className={style.Profile_mainContent_leftPart_item}
+                onClick={() => {setCurrentSection("myProfile");setSelectedItem("My Profile");setIsDropdownOpen(false)}}
+              >
+                <img
+                  src={pic1}
+                  alt=""
+                />
+                <p
+                  className={style.Profile_mainContent_leftPart_item_text}
+                  onClick={() => setCurrentSection("myProfile")}
+                >
+                  My Profile
+                </p>
+              </div>
+              <div
+                className={style.Profile_mainContent_leftPart_item}
+                
+                onClick={() => {setCurrentSection("orders"); setSelectedItem("Orders");setIsDropdownOpen(false)}}
+              >
+                <img
+                  src={pic2Grey}
+                  alt=""
+                />
+                <p
+                  className={style.Profile_mainContent_leftPart_item_text}
+                >
+                  Orders
+                </p>
+              </div>
+              <div
+                className={style.Profile_mainContent_leftPart_item}
+                
+                onClick={() => {setCurrentSection("address"); setSelectedItem("Address");setIsDropdownOpen(false)}}
+              >
+                <img
+                  src={pic3}
+                  alt=""
+                />
+                <p
+                  className={style.Profile_mainContent_leftPart_item_text}
+                  
+                >
+                  Address
+                </p>
+              </div>
+              <div
+                className={style.Profile_mainContent_leftPart_item}
+                
+                onClick={() => {setCurrentSection("password"); setSelectedItem("Password");setIsDropdownOpen(false)}}
+              >
+                <img
+                  src={pic4}
+                  alt=""
+                />
+                <p
+                  className={style.Profile_mainContent_leftPart_item_text}
+                  
+                >
+                  Password
+                </p>
+              </div>
+              <div
+                className={style.Profile_mainContent_leftPart_item}
+                
+                onClick={() =>{ setCurrentSection("logout");setSelectedItem("Logout");setIsDropdownOpen(false)}}
+              >
+                <img src={pic5} alt="" />
+                <p
+                  className={style.Profile_mainContent_leftPart_item_text}
+                  
+                >
+                  Logout
+                </p>
+              </div>
+              </div>
+            }
+            </div>
             {obj1.map((item, index) => {
               return (
                 <div className={style.Profile_mainContent_rightPart_content}>

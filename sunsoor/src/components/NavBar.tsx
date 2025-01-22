@@ -14,71 +14,66 @@ const NavBar = ({ setLoginPopup, setCreatePopup, showProfile }: any) => {
   const location = useLocation();
 
   const [accountDropDown, setAccountDropDown] = useState(false);
-  const hamburgerRef = useRef<HTMLDivElement | null>(null); 
-  const userIconRef = useRef<HTMLDivElement | null>(null); 
+  const hamburgerRef = useRef<HTMLDivElement | null>(null);
+  const userIconRef = useRef<HTMLDivElement | null>(null);
 
-  const [openOption,setOpenOption]=useState(false);
+  const [openOption, setOpenOption] = useState(false);
   const toggleHamburger = () => {
-    
     if (accountDropDown) {
       setAccountDropDown(false);
     }
-    
-    setOpenOption(prev => !prev);
+
+    setOpenOption((prev) => !prev);
   };
-  
+
   const toggleUserIcon = () => {
-    
     if (openOption) {
       setOpenOption(false);
     }
-    
-    setAccountDropDown(prev => !prev);
+
+    setAccountDropDown((prev) => !prev);
   };
-  
+
   useEffect(() => {
     const handleClickOutside = (event: any) => {
       if (
-        (hamburgerRef.current && !hamburgerRef.current.contains(event.target)) &&
-        (userIconRef.current && !userIconRef.current.contains(event.target)) &&
-        !event.target.closest(`.${style2.headerForProductContainer_DropDown}`) 
+        hamburgerRef.current &&
+        !hamburgerRef.current.contains(event.target) &&
+        userIconRef.current &&
+        !userIconRef.current.contains(event.target) &&
+        !event.target.closest(`.${style2.headerForProductContainer_DropDown}`)
       ) {
         setAccountDropDown(false);
         setOpenOption(false);
       }
     };
-  
+
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-  
-  
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  
-    
-    useEffect(() => {
-      const handleResize = () => {
-        setViewportWidth(window.innerWidth);
-      };
-  
-      
-      window.addEventListener('resize', handleResize);
-  
-      
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-    const isTablet = viewportWidth <= 768;
-    const isSmTablet = viewportWidth <= 425;
-    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
-    
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportWidth(window.innerWidth);
     };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const isTablet = viewportWidth <= 768;
+  const isSmTablet = viewportWidth <= 425;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <div className={style.navBarHead}>
       {}
@@ -90,60 +85,84 @@ const NavBar = ({ setLoginPopup, setCreatePopup, showProfile }: any) => {
 
       {}
       <div className={style.navBarLinks}>
-  {}
-  
+        {}
 
-  {}
-  {!isSmTablet && (
-  <div className={style.navLinksText}>
-    <NavLink to="/ourProduct" style={{ textDecoration: "none" }}>
-      <p className={`${style.navLinkText} ${isTablet ? style.tabletFontSize : ''}`}>Our Product</p>
-    </NavLink>
+        {}
+        {!isTablet && (
+          <div className={style.navLinksText}>
+            <NavLink to="/ourProduct" style={{ textDecoration: "none" }}>
+              <p
+                className={`${style.navLinkText} ${
+                  isTablet ? style.tabletFontSize : ""
+                }`}
+              >
+                Our Product
+              </p>
+            </NavLink>
 
-    <NavLink to="/ourStory" style={{ textDecoration: "none" }}>
-      <p className={`${style.navLinkText} ${isTablet ? style.tabletFontSize : ''}`}>Our Story</p>
-    </NavLink>
+            <NavLink to="/ourStory" style={{ textDecoration: "none" }}>
+              <p
+                className={`${style.navLinkText} ${
+                  isTablet ? style.tabletFontSize : ""
+                }`}
+              >
+                Our Story
+              </p>
+            </NavLink>
 
-    <NavLink to="/blogs" style={{ textDecoration: "none" }}>
-      <p className={`${style.navLinkText} ${isTablet ? style.tabletFontSize : ''}`}>Blogs</p>
-    </NavLink>
+            <NavLink to="/blogs" style={{ textDecoration: "none" }}>
+              <p
+                className={`${style.navLinkText} ${
+                  isTablet ? style.tabletFontSize : ""
+                }`}
+              >
+                Blogs
+              </p>
+            </NavLink>
 
-    <NavLink to="/aboutUs" style={{ textDecoration: "none" }}>
-      <p className={`${style.navLinkText} ${isTablet ? style.tabletFontSize : ''}`}>About Us</p>
-    </NavLink>
+            <NavLink to="/aboutUs" style={{ textDecoration: "none" }}>
+              <p
+                className={`${style.navLinkText} ${
+                  isTablet ? style.tabletFontSize : ""
+                }`}
+              >
+                About Us
+              </p>
+            </NavLink>
 
-    <NavLink to="/contactUs" style={{ textDecoration: "none" }}>
-      <p className={`${style.navLinkText} ${isTablet ? style.tabletFontSize : ''}`}>Contact Us</p>
-    </NavLink>
-  </div>
-)}
-
-
-</div>
-
-
-
-
+            <NavLink to="/contactUs" style={{ textDecoration: "none" }}>
+              <p
+                className={`${style.navLinkText} ${
+                  isTablet ? style.tabletFontSize : ""
+                }`}
+              >
+                Contact Us
+              </p>
+            </NavLink>
+          </div>
+        )}
+      </div>
 
       {}
       <div className={style.navIcons}>
-      {isSmTablet && (
-    <div
-      style={{
-        cursor: "pointer",
-        fontSize: "24px",
-        position:"relative"
-      }}
-      
-    >
-      <div className={style.HamburgerIcon} onClick={toggleHamburger} ref={hamburgerRef} >
-      <FaBars />
-        </div>
-        {
-          openOption && <NavBarOptions/>
-        }
-    </div>
-  )}
+        {isTablet && (
+          <div
+            style={{
+              cursor: "pointer",
+              fontSize: "24px",
+              position: "relative",
+            }}
+          >
+            <div
+              className={style.HamburgerIcon}
+              onClick={toggleHamburger}
+              ref={hamburgerRef}
+            >
+              <FaBars />
+            </div>
+            {openOption && <NavBarOptions />}
+          </div>
+        )}
         <div className={style.searchIcon}>
           <img src={magnify} alt="" className={style.magnify} />
         </div>
@@ -157,7 +176,7 @@ const NavBar = ({ setLoginPopup, setCreatePopup, showProfile }: any) => {
             onClick={toggleUserIcon}
             ref={userIconRef}
           >
-            <img src={userIcon} alt=""  />
+            <img src={userIcon} alt="" />
             {accountDropDown && (
               <div className={style2.headerForProductContainer_DropDown}>
                 <p

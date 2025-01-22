@@ -128,7 +128,7 @@ const Product = () => {
     // Check screen width when the component mounts and on resize
     useEffect(() => {
       const checkScreenWidth = () => {
-        setIsMobileView(window.innerWidth <= 425); // Mobile view logic
+        setIsMobileView(window.innerWidth <= 610); // Mobile view logic
       };
   
       checkScreenWidth(); // Check initial screen width

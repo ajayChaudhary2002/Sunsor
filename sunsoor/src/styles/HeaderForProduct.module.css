@@ -222,6 +222,11 @@
     width: 44.12px; /* Keep logo sizes the same */
   }
 }
+@media (min-width: 768px) and (max-width: 851px){
+  .LocationText{
+    font-size: 8px;
+  }
+}
 @media (max-width: 768px) {
   .headerForProductContainer {
     padding: 1rem 2rem; /* Reduce padding for smaller screens */
@@ -296,7 +301,7 @@
     width: 32px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 480px){
   .headerForProductContainer {
     padding: 1rem 2rem; /* Reduce padding for smaller screens */
     gap: 1rem; /* Reduce gap between elements */

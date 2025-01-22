@@ -46,6 +46,16 @@
   gap: 1.4rem;
 }
 
+
+.navLinkText {
+  display: inline;
+  margin-right: 20px;
+  font-weight: 600;
+  color: black;
+  font-size: 18px; 
+}
+
+
 /* Icons Section */
 .navIcons {
   display: flex;
@@ -87,6 +97,7 @@
 @media screen and (max-width: 1024px) {
   .navLinksText{
     width: 100%;
+    margin-right: 0;
   }
   .navLinkText {
     font-size: 14px; /* Font size for smaller screens */
@@ -188,17 +199,23 @@
 }
 
 
-/* Default font size for larger screens */
-.navLinkText {
-  display: inline;
-  margin-right: 20px;
-  font-weight: 600;
-  color: black;
-  font-size: 18px; /* Default font size for larger screens */
-}
-
 /* For tablet screens, apply font size of 10px */
 .tabletFontSize {
   font-size: 14px; /* Reduced font size for tablet screens */
 }
 
+
+
+
+
+
+
+
+/* TESTING CHANGES */
+@media(max-width:895px)
+{
+  .navLinksText{
+    margin-right: 0;
+    font-size: 14px;
+  }
+}
