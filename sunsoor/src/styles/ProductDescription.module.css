@@ -580,6 +580,7 @@
   }
 }
 
+
 /* For max-width: 768px (Tablet) */
 @media (max-width: 768px) {
   .myProductDescription_firstDiv {
@@ -661,9 +662,22 @@
     font-size: 14px;
   }
 }
-
+@media (min-width:768px) and (max-width:803px)
+{
+  .myProductDescription_div5_para1, .myProductDescription_div5_para2{
+    font-size: 14px;
+    line-height: 25px;
+}
+}
+@media (min-width:480px) and (max-width:712px)
+{
+  .myProductDescription_div5_para1, .myProductDescription_div5_para2{
+    font-size: 12px;
+    height: 15rem;
+}
+}
 /* For max-width: 425px (Mobile) */
-@media (max-width: 426px) {
+@media (max-width: 480px) {
   .myProductDescription_firstDiv {
     padding: 0rem 1rem;
   }
@@ -774,4 +788,11 @@
   .reviewerInfo_comment {
     font-size: 12px;
   }
+}
+
+@media (max-width: 384px) {
+  .myProductDescription_div5_para1, .myProductDescription_div5_para2{
+    font-size: 12px;
+    height: 15rem;
+}
 }

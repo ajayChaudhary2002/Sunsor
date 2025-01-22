@@ -244,6 +244,17 @@
 
 /* RESPONSIVE CODE */
 
+
+@media (min-width:1200px) and (max-width:1318px)
+{
+  .section1Container_rightContainer_topDiv{
+    width: 70%;
+  }
+  .section4Container_rightContainer_rightPart{
+    width: 50%;
+    left: 316px;
+  }
+}
 /* For screens 1200px and above */
 @media screen and (max-width: 1200px) {
 
@@ -273,8 +284,12 @@
   }
 
   .section4Container_rightContainer_rightPart {
-    width: 350px;
-    left: 400px;
+    width: 255px;
+    left: 288px;
+  }
+  .section1Container_rightContainer_bottomDiv{
+    position: relative;
+    bottom:6px;
   }
 }
 
@@ -328,7 +343,7 @@
   .section1Container_rightContainer_bottomDiv{
     width: 59%;
     position: relative;
-    bottom: 1rem;
+    bottom: 2px;
   }
   .heroSectionRedPartFooter_heading{
     font-size: 30px;
@@ -345,87 +360,124 @@
     right: -6rem;
    }
 }
-
+@media (min-width:768px) and (max-width:924px)
+{
+  .section1Container_rightContainer_topDiv{
+    width: 22rem;
+  }
+  .section4Container_rightContainer_rightPart{
+    width: 205px;
+    left: 170px;
+    top: 60px;
+  }
+  .section1Container_rightContainer_bottomDiv{
+    width: 80%;
+    position: relative;
+    bottom: 4px;
+  }
+}
 /* For screens 768px and below */
+
+/* For screens 480px and below */
 @media screen and (max-width: 768px) {
 
+  .section4Container_foodContainerDiv{
+    display: flex;
+    flex-direction: column;
+
+  }
   .heroSectionRedPartFooterDiv {
     width: 100%;
-    top: 8rem;
+    top: 6rem;
   }
 
   .heroSectionRedPartFooter {
-    padding: 2rem 2rem;
+    
+    padding: 1rem;
   }
 
   .section4Container {
-    padding: 6rem 2rem 0 2rem;
+    padding: 4rem 1rem 1rem 1rem;
   }
 
   .section4Container_leftContainer_para {
-    font-size: 45px;
-    line-height: 35px;
-    padding-left: 3rem;
-    box-sizing: border-box;
+    font-size: 110px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
 
   .section4Container_leftContainer_imageDiv {
-    position: relative;
-    right: -4rem;
-    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 1rem;
   }
 
   .section4Container_leftContainer_foodDiv {
-    width: 85%;
+    width: 90%;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+
   }
 
   .section4Container_leftContainer_foodDiv_para2 {
     width: 100%;
     font-size: 14px;
-    line-height: 20px;
   }
 
   .section4Container_rightContainer_leftPart {
-    width: 55%;
+    width: 76%;
     position: relative;
-    left: 3rem;
+    gap: 20rem;
   }
 
   .section4Container_rightContainer_rightPart {
-    width: 216px;
-    left: 140px;
-
+    width: 180px;
+    left: 119px;
+    top: 14rem;
   }
 
   .section1Container_rightContainer_topDiv {
-    width: 100%;
+    width: 85%;
+    left: 26%;
+  }
+  .section4Container_rightContainer_rightPart{
+    left: 80%;
+    top: 7rem;
   }
 
   .section1Container_rightContainer_bottomDiv {
-    width: 70%;
+    width: 60%;
     position: relative;
-    bottom: 2.4rem;
+    bottom: 10rem;
+    left: 26%;
   }
 
   .heroSectionRedPartFooter_heading {
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .heroSectionRedPartFooter_para1 {
-    font-size: 12px;
-  }
-  .section1Container_rightContainer_topDiv_para2{
-    font-size: 16px;
-    width: 100%;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 30px;
   }
 
   .heroSectionRedPartFooter_oilImage {
     width: 80%;
-    right: -5rem;
+    right: -4rem;
   }
 }
-
+@media (min-width:480px) and (max-width:605px)
+{
+  .section4Container_rightContainer_leftPart{
+    width: 76%;
+    position: relative;
+    gap: 20rem;
+    left: 0;
+  }
+}
 /* For screens 480px and below */
 @media screen and (max-width: 480px) {
 
@@ -459,7 +511,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 6rem;
+    left: 1rem;
   }
 
   .section4Container_leftContainer_foodDiv {
@@ -479,21 +531,24 @@
     width: 76%;
     position: relative;
     gap: 20rem;
+    left: 0;
   }
 
   .section4Container_rightContainer_rightPart {
     width: 180px;
-    left: 119px;
+    left: 220px;
     top: 14rem;
   }
 
   .section1Container_rightContainer_topDiv {
     width: 100%;
+    left: 80px;
   }
 
   .section1Container_rightContainer_bottomDiv {
     width: 100%;
     position: relative;
+    bottom: 0;
   }
 
   .heroSectionRedPartFooter_heading {
@@ -508,6 +563,19 @@
   .heroSectionRedPartFooter_oilImage {
     width: 80%;
     right: -4rem;
+  }
+}
+@media (min-width:320px) and (max-width:408px)
+{
+  .section1Container_rightContainer_topDiv{
+    width: 86%;
+  }
+  .section4Container_rightContainer_rightPart{
+    left: 196px;
+  }
+  .section1Container_rightContainer_bottomDiv{
+    width: 86%;
+    left: 82px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -542,7 +610,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 6rem;
+    left: 1rem;
   }
 
   .section4Container_leftContainer_foodDiv {
@@ -566,17 +634,23 @@
 
   .section4Container_rightContainer_rightPart {
     width: 180px;
-    left: 46px;
+    left: 118px;
     top: 14rem;
   }
 
   .section1Container_rightContainer_topDiv {
     width: 100%;
+    left: 42px;
+  }
+  .section1Container_rightContainer_topDiv_para2{
+    font-size: 18px;
+    width: 10rem;
   }
 
   .section1Container_rightContainer_bottomDiv {
     width: 259px;
     position: relative;
+    left: 40px;
   }
 
   .heroSectionRedPartFooter_heading {

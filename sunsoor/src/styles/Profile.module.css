@@ -351,8 +351,7 @@
   }
 
   .Profile_mainContent_rightPart_content {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
 
   .Profile_mainContent_rightPart_content_left {
@@ -397,6 +396,12 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+@media (min-width:768px) and (max-width:911px)
+{
+  .navLinkText{
+    font-size: 10px;
+  }
+}
 
 /* Tablet responsiveness (max-width: 768px) */
 @media screen and (max-width: 768px) {
@@ -410,13 +415,14 @@
   }
 
   .Profile_mainContent_leftPart {
-    width: 25%;
+    width: 100%;
     margin-bottom: 2rem;
   }
 
   .Profile_mainContent_leftPart_item {
     padding: 0.5rem;
     width: 100%;
+    margin-bottom: 3rem;
   }
 
   .Profile_mainContent_rightPart {
@@ -426,8 +432,7 @@
   }
 
   .Profile_mainContent_rightPart_content {
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
   }
 
   .Profile_mainContent_rightPart_content_left {
@@ -443,12 +448,13 @@
     width: 100%;
     height: auto;
     padding: 2rem;
+    align-self: center;
   }
 
   .Profile_mainContent_rightPart_address,
   .Profile_mainContent_rightPart_password,
   .Profile_mainContent_rightPart_myProfile {
-    width: 100%;
+    width: 70%;
     padding-left: 2rem;
     border-left: none;
     height: auto;
@@ -495,9 +501,11 @@
     width: 100%;
     background-color: #fafafa;
     border-radius: 0px;
+    margin-bottom: 0;
   }
   .dropdownProfile{
     gap: 0 !important;
+    background-color: #fafafa;
   }
 
   .Profile_mainContent_rightPart {
@@ -514,10 +522,13 @@
   .Profile_mainContent_rightPart_content_left {
     gap: 1rem;
   }
+  .Profile_mainContent_rightPart_content_right_txt1{
+    display: none;
+  }
 
   .Profile_mainContent_rightPart_content_right {
-    justify-content: start;
-    gap: 1rem;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .Profile_mainContent_rightPart2 {
@@ -558,3 +569,19 @@
 }
 
 
+@media screen and (max-width:320px) {
+  .Profile_mainContent_rightPart_content_left_info_text1{
+    font-size: 14px;
+
+  }
+  .Profile_mainContent_rightPart_content_left_info_text2{
+    font-size: 12px;
+  }
+  .Profile_mainContent_rightPart_content_left_info_price{
+    font-size: 12px;
+  }
+  .Profile_mainContent_rightPart_content_right{
+    padding-top:1rem ;
+    padding-right: 1rem;
+  }
+}

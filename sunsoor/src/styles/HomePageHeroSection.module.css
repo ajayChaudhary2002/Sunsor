@@ -262,6 +262,15 @@ html, body {
     width: 100%;
     margin-left: 1.5rem;
   }
+  .someText{
+    width: 100%;
+  }
+  .someTextUpper{
+    font-size: 12px;
+  }
+  .littleText{
+    display: none;
+  }
 }
 
 /* For mobile screens (below 480px) */
@@ -359,23 +368,21 @@ html, body {
   }
 
   .someTextUpper{
-    font-size: 12px;
+    font-size: 10px;
   }
   .littleText{
-    font-size: 10px;
-    max-width: 183px;
-    width: 100%;
+    font-size: 8px;
   }
   .childDiv1{
-    left: -21px;
+    left: -1px;
     width: 40px;
   }
   .childDiv2{
-    left:6px;
+    left:22px;
     width: 40px;
   }
   .childDiv3{
-    left:34px;
+    left:49px;
     width: 40px;
   }
 }
@@ -551,87 +558,88 @@ html, body {
 }
 
 
-/* For screens smaller than 1200px (Tablet and Small Tablets) */
-@media screen and (max-width: 1199px) {
+/* For screens smaller than 480px (Mobile) */
+@media screen and (max-width: 480px) {
   .heroSectionRedPart {
-    padding-top: 3rem;
-    padding-bottom: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
   }
 
   .heroSectionRedPartHeading {
-    font-size: 36px;
-    line-height: 43.2px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
   }
 
   .heroSectionRedPartPara {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 20px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   .heroSectionRedPartObjectDiv {
-    padding: 0 3rem;
-    gap: 2rem;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
   }
 
   .heroSectionProductText {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .heroSectionRedPartFooterDiv {
-    width: 80%;
-    bottom: -6rem;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .heroSectionRedPartFooter {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
   }
 
   .heroSectionRedPartFooter_heading {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
   }
 
   .heroSectionRedPartFooter_para1,
   .heroSectionRedPartFooter_para2,
   .heroSectionRedPartFooter_para3 {
-    font-size: 18px;
-    line-height: 40px;
-    gap: 0.4rem;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
   }
 
   .heroSectionRedPartFooter_oilImage {
-    height: 200px;
-    width: 200px;
-    bottom: -1rem;
+    height: 100px;
+    width: 100px;
+    bottom: -0.57rem;
   }
 }
 
-/* For screens smaller than 992px (Portrait Tablets / Small Devices) */
-@media screen and (max-width: 991px) {
+/* For screens between 481px and 768px (Tablet Portrait / Small Devices) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .heroSectionRedPart {
     padding-top: 2rem;
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
   }
 
   .heroSectionRedPartHeading {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
   }
 
   .heroSectionRedPartPara {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .heroSectionRedPartObjectDiv {
+    flex-direction: column;
     padding: 0 2rem;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .heroSectionProductText {
@@ -642,209 +650,138 @@ html, body {
   .heroSectionRedPartFooter {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .heroSectionRedPartFooter_heading {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
   }
 
   .heroSectionRedPartFooter_para1,
   .heroSectionRedPartFooter_para2,
   .heroSectionRedPartFooter_para3 {
-    font-size: 16px;
-    line-height: 36px;
-    gap: 0.3rem;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
   }
 
   .heroSectionRedPartFooter_oilImage {
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
+    bottom: -0.57rem;
   }
 }
 
-/* For screens smaller than 768px (Mobile Landscape / Small Devices) */
-@media screen and (max-width: 768px) {
+/* For screens between 769px and 1024px (Tablet Landscape / Small Desktop) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .heroSectionRedPart {
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-bottom: 10rem;
   }
 
   .heroSectionRedPartHeading {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 32px;
     text-align: center;
   }
 
   .heroSectionRedPartPara {
-    font-size: 14px;
-    line-height: 20px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .heroSectionRedPartObjectDiv {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 12.5rem;
-    gap: 3rem;
+    padding: 0 10rem;
+    gap: 2.5rem;
   }
 
   .heroSectionProductText {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .heroSectionRedPartFooter {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   .heroSectionRedPartFooter_heading {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 30px;
     text-align: center;
   }
 
   .heroSectionRedPartFooter_para1,
   .heroSectionRedPartFooter_para2,
   .heroSectionRedPartFooter_para3 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 28px;
-    gap: 0.3rem;
     text-align: center;
   }
 
   .heroSectionRedPartFooter_oilImage {
     height: 150px;
     width: 150px;
-    bottom: -10px;
+    bottom: -0.57rem;
   }
 }
 
-/* For screens smaller than 425px (Mobile Portrait) */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1025px) {
   .heroSectionRedPart {
-    padding-top: 0.5rem;
-    padding-bottom: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 12rem;
   }
 
   .heroSectionRedPartHeading {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .heroSectionRedPartPara {
-    font-size: 12px;
-    line-height: 18px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .heroSectionRedPartObjectDiv {
-    flex-direction: column;
-    padding: 0 1.5rem;
-    gap: 2rem;
+    padding: 0 4rem;
+    gap: 3rem;
   }
+
   .heroSectionProductText {
-    font-size: 18px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .heroSectionRedPartFooter {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    gap: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .heroSectionRedPartFooter_heading {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
   }
 
   .heroSectionRedPartFooter_para1,
   .heroSectionRedPartFooter_para2,
   .heroSectionRedPartFooter_para3 {
-    font-size: 8px;
-    line-height: 24px;
-    gap: 0.3rem;
-    text-align: center;
-  }
-
-  .heroSectionRedPartFooterDiv{
-    width: 90%;
-  }
-  .heroSectionRedPartFooter_oilImage {
-    height: 120px;
-    width: 120px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .heroSectionRedPart {
-    padding-top: 0.5rem;
-    padding-bottom: 8rem;
-  }
-
-  .heroSectionRedPartHeading {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-  }
-
-  .heroSectionRedPartPara {
-    font-size: 12px;
-    line-height: 18px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .heroSectionRedPartObjectDiv {
-    flex-direction: column;
-    padding: 0 1.5rem;
-    gap: 2rem;
-  }
-  .heroSectionProductText {
     font-size: 18px;
-    line-height: 16px;
+    line-height: 32px;
+    text-align: left;
   }
 
-  .heroSectionRedPartFooter {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    gap: 0;
-  }
-
-  .heroSectionRedPartFooter_heading {
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-  }
-
-  .heroSectionRedPartFooter_para1,
-  .heroSectionRedPartFooter_para2,
-  .heroSectionRedPartFooter_para3 {
-    font-size: 8px;
-    line-height: 24px;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  .heroSectionRedPartFooterDiv{
-    width: 90%;
-  }
   .heroSectionRedPartFooter_oilImage {
-    height: 120px;
-    width: 120px;
+    height: 200px;
+    width: 200px;
+    bottom: -0.8rem;
   }
 }
 
@@ -1409,5 +1346,11 @@ html, body {
   .randomImages{
     margin-left: 12rem;
 
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1227px){
+  .heroSectionBestSeller_restContent_AmountDetails{
+    width: 15rem;
   }
 }

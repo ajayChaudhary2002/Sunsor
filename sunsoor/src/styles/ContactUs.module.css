@@ -209,6 +209,7 @@
 @media screen and (max-width: 768px) {
   .fromSection_container {
     padding: 2rem 1.5rem;
+    flex-wrap: wrap;
   }
 
   .fromSection_form {

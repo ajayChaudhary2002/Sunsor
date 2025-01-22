@@ -122,7 +122,10 @@
     font-size: 14px;
   }
   .loginPage_additionalDiv_para{
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .CreateAccountPopUp_txt2 span{
+    font-size: 10px;
   }
 }
 
@@ -189,5 +192,26 @@
 
   .CreateAccountPopUp_container_main_password_input_img1 {
     top: 50px; /* Adjust icon position */
+  }
+}
+ 
+@media (min-width:380px) and (max-width:415px)
+{
+  .loginPage_additionalDiv_left{
+    font-size: 12px;
+  }
+  .loginPage_additionalDiv_para{
+    font-size: 10px;
+    width: 10rem;
+  }
+}
+@media (max-width:380px) {
+  .loginPage_additionalDiv_para{
+    font-size: 8px;
+    line-height: 10px;
+    width: 105px;
+  }
+  .loginPage_additionalDiv_left{
+    font-size: 12px;
   }
 }

@@ -164,6 +164,9 @@ html, body {
   .starDivBoldPart {
     font-size: 12px;
 }
+.locationTextDiv{
+  display: none;
+}
 }
 @media (max-width: 320px) {
   .headerPart {
