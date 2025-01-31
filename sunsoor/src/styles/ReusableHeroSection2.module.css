@@ -81,6 +81,15 @@
 
 /* Responsive Styles */
 
+@media (min-width:1024px) and (max-width:1300px)
+{
+  .ReusableHeroSection2_Videos_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  
+}
 /* For 1024px and below (Tablet Landscape) */
 @media screen and (max-width: 1024px) {
   .ReusableHeroSection2_container {
@@ -113,6 +122,29 @@
     width: 70px;
     height: 70px;
   }
+}
+
+@media (min-width:768px) and (max-width:942px)
+{
+  .ReusableHeroSection2_Videos_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    
+  }
+  .ReusableHeroSection2_Videos_boxes{
+    justify-items: center;
+    align-items: center;
+  }
+  .ReusableHeroSection2_Videos_text{
+    width: 100%;
+    text-align: center;
+  }
+  .ReusableHeroSection2_Videos_name{
+    width: 48%;
+    text-align: center;
+  }
+  
 }
 
 /* For 768px and below (Tablet Portrait) */
