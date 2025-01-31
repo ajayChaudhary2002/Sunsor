@@ -536,17 +536,17 @@
 
   .section4Container_rightContainer_rightPart {
     width: 180px;
-    left: 220px;
+    left: 197px;
     top: 14rem;
   }
 
   .section1Container_rightContainer_topDiv {
-    width: 100%;
+    width: 86%;
     left: 80px;
   }
 
   .section1Container_rightContainer_bottomDiv {
-    width: 100%;
+    width: 84%;
     position: relative;
     bottom: 0;
   }
